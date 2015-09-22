@@ -74,7 +74,7 @@ div{
 	width:960px;
 	height:620px;
 	position:relative;
-	overflow:hidden;
+	/*overflow:hidden;*/
 }
 .jumboQuote{
 	display:block;
@@ -127,15 +127,17 @@ div{
 	top:44.35%;
 }
 #jumboImgCont{
-	position:relative;
+	width:960px;
 	height:620px;
-	left:0px;
+	background-color:#0F6;
+	position:absolute;
+	left:7px;
 }	
 .jumboImg{
 	position:absolute;
 }
 .imgA{
-	left:0;
+	left:10px;
 }
 .imgB{
 	left:960px;
