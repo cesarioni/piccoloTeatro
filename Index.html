@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style/styles.css">
-<script language="javascript" type="text/javascript" src="scripts/scripts.js"></script>
 <title>Untitled Document</title>
 </head>
 
@@ -29,23 +28,36 @@
             	<a  href="#" class="jumboQuote inactiveNavBtn quoteB">noches chinas</a>
                 <p class="jumboQuote quoteC">primera funci&oacute;n 21 de junio</p>
                 <!--<a  href="#" class="jumboQuote inactiveNavBtn quoteD">compra tus entradas</a>-->
-                <div class="arrow jumboNextArrow" onclick="carouselAction()"><img src="images/arrowsCarouselNext.png" alt="" width="50" height="70" /></div>
+                <div class="arrow jumboNextArrow"><img src="images/arrowsCarouselNext.png" alt="" width="50" height="70" /></div>
                 <div class="arrow jumboPrevArrow"><img src="images/arrowsCarouselPrev.png" alt="" width="50" height="70" /></div>
-                <div id="jumboImgCont">
-                    <a href="#" class="jumboImg imgA">
-                        <img src="images/dummy1.jpg" alt="" width="960" height="620" />
-                    </a>
-                    <a href="#" class="jumboImg imgB">
-                        <img src="images/dummy2.jpg" alt="" width="960" height="620" />
-                    </a>
-                    <a href="#" class="jumboImg imgC">
-                        <img src="images/dummy3.jpg" alt="" width="960" height="620" />
-                    </a>
-                </div>
+                <ul id="slides">
+                	<li class="imgSlide">
+                        <a href="#" class="jumboImg imgA"> 
+                        	<img src="images/dummy1.jpg" alt="" width="960" height="620" />			
+                        </a>             
+                    </li>    
+                    <li class="imgSlide">
+                        <a href="#" class="jumboImg imgB">        
+                        	<img src="images/dummy2.jpg" alt="" width="960" height="620" />        	
+                        </a>        
+                    </li>
+                    <li class="imgSlide">
+                        <a href="#" class="jumboImg imgC">        
+                        	<img src="images/dummy3.jpg" alt="" width="960" height="620" />        	
+                        </a>        
+                    </li>
+                    <li class="imgSlide">
+                        <a href="#" class="jumboImg imgA"> 
+                        	<img src="images/dummy1.jpg" alt="" width="960" height="620" />			
+                        </a>             
+                    </li>
+				</ul>
             </div>        
         </div>
         <div class="footer">
         </div>
     </div>
+    <script language="javascript" type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/scripts.js"></script>
 </body>
 </html>
