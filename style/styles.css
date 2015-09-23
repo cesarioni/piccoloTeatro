@@ -74,7 +74,7 @@ div{
 	width:960px;
 	height:620px;
 	position:relative;
-	/*overflow:hidden;*/
+	overflow:hidden;
 }
 .jumboQuote{
 	display:block;
@@ -126,23 +126,20 @@ div{
 .jumboPrevArrow{
 	top:44.35%;
 }
-#jumboImgCont{
-	width:960px;
+#slides{
+	display:block;
+	width:3840px;
 	height:620px;
 	background-color:#0F6;
-	position:absolute;
-	left:7px;
+	margin:0px;
+	margin-left:0px;
+	padding:0px;
+	/*position:absolute;
+	left:0px;*/
+}
+.imgSlide{
+	float:left;
+	list-style-type:none;
+	width:960px;
+	height:620px;
 }	
-.jumboImg{
-	position:absolute;
-}
-.imgA{
-	left:10px;
-}
-.imgB{
-	left:960px;
-}
-.imgC{
-	left:1920px;
-}	
-	

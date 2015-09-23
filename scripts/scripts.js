@@ -17,24 +17,28 @@ $(document).ready(function(){
 	}
 	
 	function activateSlider(){
-		$slider.animate({'margin-left':'-='+width}, animationSpeed, slideOrder());
+		transicion=true;
+		console.log(transicion);
+		$slider.animate({'margin-left':'-='+width}, animationSpeed, slideOrder);
 	}
 	
 	function slideOrder(){
-		console.log(currentSlide);
+		currentSlide++;
 		if(currentSlide>=$slides.length){
 			currentSlide=1;
 			$slider.css('margin-left', 0);
-			console.log("regreso");
 		}
-		currentSlide++;
+		transicion=false;
+		console.log(transicion);
 	}
-	//createCarouselInterval();
-
-	function nextImage(){
-		//clearInterval(autoCarInterval);
-		activateSlider();
+	function nextImage(e){
+		clearInterval(autoCarInterval);
+		if(transicion==false){
+			activateSlider();
+			createCarouselInterval();
+		}
 	}
+	createCarouselInterval();
 });
 
 
