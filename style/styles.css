@@ -68,7 +68,7 @@ div{
 	border-left-style:solid;
 	border-left-color:#C43100;
 }
-
+/*Carousel TEMPLATE*/
 .jumbotron{
 	margin:60px 0 0 0;
 	width:960px;
@@ -128,18 +128,37 @@ div{
 }
 #slides{
 	display:block;
-	width:3840px;
+	width:4800px;/*width of images multiplied by image number*/
 	height:620px;
-	background-color:#0F6;
+	background-color:#F00;
 	margin:0px;
 	margin-left:0px;
 	padding:0px;
-	/*position:absolute;
-	left:0px;*/
+	position:relative;
+
 }
 .imgSlide{
-	float:left;
+	position:absolute;
 	list-style-type:none;
 	width:960px;
 	height:620px;
-}	
+}
+.slideA{
+	left:0;
+}
+.slideB{
+	left:960px;
+}
+.slideC{
+	left:1920px;
+}
+.slideD{
+	left:2880px;
+}
+.slideE{
+	left:3840px;
+}
+/*End of carousel style*/
+.socialLinkCont{
+	width:51px;
+}

@@ -10,7 +10,7 @@ $(document).ready(function(){
 	var $slides=$slider.find('.imgSlide');
 	
 	$(".jumboNextArrow").on("click",nextImage);
-	//$(".jumboNextArrow").on("click",nextImage());
+	$(".jumboPrevArrow").on("click",prevImage);
 	
 	function createCarouselInterval(){
 		autoCarInterval=setInterval(activateSlider,pause);
@@ -18,8 +18,21 @@ $(document).ready(function(){
 	
 	function activateSlider(){
 		transicion=true;
-		console.log(transicion);
 		$slider.animate({'margin-left':'-='+width}, animationSpeed, slideOrder);
+	}
+	
+	function activateSliderNegative(){
+		transicion=true;
+		$slider.animate({'margin-left':'+='+width}, animationSpeed, slideOrderNegative);
+	}
+	
+	function slideOrderNegative(){
+		currentSlide--;
+		if(currentSlide<=$slides.length){
+			currentSlide=1;
+			$slider.css('margin-left', 0);
+		}
+		transicion=false;
 	}
 	
 	function slideOrder(){
@@ -29,12 +42,19 @@ $(document).ready(function(){
 			$slider.css('margin-left', 0);
 		}
 		transicion=false;
-		console.log(transicion);
 	}
 	function nextImage(e){
 		clearInterval(autoCarInterval);
 		if(transicion==false){
 			activateSlider();
+			createCarouselInterval();
+		}
+	}
+	function prevImage(e){
+		console.log("SHERRY");
+		clearInterval(autoCarInterval);
+		if(transicion==false){
+			activateSliderNegative();
 			createCarouselInterval();
 		}
 	}
