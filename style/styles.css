@@ -18,7 +18,7 @@ a, ul, li, p, h1, h2, h3, h4, img {
     border: 0;
 }
 body{
-	background-color:#000;
+	background-color:#FBAF3F;
 	font-family:Arial, Helvetica, sans-serif;
 }
 li{
@@ -30,15 +30,18 @@ div{
 .logoContainer{
 	width:100%;
 	height:150px;
-	
 }	
 #mainContainer{
 	width:960px;
 	margin:0 auto;
 }
+.header{
+	width:100%;
+	height:225px;
+	padding:0 0 10px 0;
+}	
 .mainNav{
 	width:960px;
-	background-color:#000;
 }
 .mainNav ul li a{
 	font-family: "Open Sans",sans-serif;
@@ -46,11 +49,13 @@ div{
 	font-weight: bold;
 	font-size: 11px;
 	text-transform: uppercase;
+	text-align:center;
+	display:block;
 }
 .inactiveNavBtn{
-	color:#C43100;
-	-webkit-transition: color 1s; /* Safari */
-    transition: color 1s;
+	color:#000;
+	-webkit-transition: color 0.3s; /* Safari */
+    transition: color 0.3s;
 }
 .inactiveNavBtn:hover{
 	color:#FFF;
@@ -58,19 +63,26 @@ div{
 .activeNavBtn{
 	color:#FFF;
 }
-.mainNav ul li{
+.ulLevel1{
+	width:90%;
+	margin:0 auto;
+}
+.navLevel1{
     float: left;
-    padding: 0 5.5%;
+	width:16.6%;
+}
+.navLevel2{
+	margin:10px 0 0 0;
 }
 .borderNav{
 	border-bottom-width:thick;
 	border-left-width:1px;
 	border-left-style:solid;
-	border-left-color:#C43100;
+	border-left-color:#000;
+	/*padding: 0 5.5%;*/
 }
 /*Carousel TEMPLATE*/
 .jumbotron{
-	margin:60px 0 0 0;
 	width:960px;
 	height:620px;
 	position:relative;
@@ -159,6 +171,23 @@ div{
 	left:3840px;
 }
 /*End of carousel style*/
+.footer{
+	width:100%;
+	height:125px;
+}	
 .socialLinkCont{
-	width:51px;
+	float:right;
+	margin:10px 0 0 0;
+	width:69px;
+	display:block;
 }
+.socialLink{
+	float:left;
+	width:17px;
+	height:17px;
+	display:block;
+}
+.socialBtnMargin{
+	margin-right:9px;
+}	
+	

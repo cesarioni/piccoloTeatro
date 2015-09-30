@@ -6,19 +6,29 @@
 <title>Untitled Document</title>
 </head>
 
-<body id="lala" >
+<body>
     <div id="mainContainer">
         <div class="header">
         	<div class="logoContainer">
             </div>
             <div class="mainNav cf">
-            	<ul>
-                	<li><a href="#" class="activeNavBtn">inicio</a></li>
-                    <li class="borderNav"><a href="#" class="inactiveNavBtn">nosotros</a></li>
-                    <li class="borderNav"><a href="#" class="inactiveNavBtn">clases</a></li>
-                    <li class="borderNav"><a href="#" class="inactiveNavBtn">cartelera</a></li>
-                    <li class="borderNav"><a href="#" class="inactiveNavBtn">galer&iacute;a</a></li>
-                    <li class="borderNav"><a href="#" class="inactiveNavBtn">contacto</a></li>
+            	<ul class="ulLevel1 cf">
+                	<li class="navLevel1"><a href="#" class="activeNavBtn">inicio</a></li>
+                    <li class="navLevel1"><a href="#" class="inactiveNavBtn borderNav">nosotros</a></li>
+                    <li class="navLevel1"><a href="#" class="inactiveNavBtn borderNav">clases</a>
+                    	<ul class="ulLevel2">
+                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">horarios</a></li>
+                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">estrenos</a></li>
+                        </ul>
+                    </li>
+                    <li class="navLevel1"><a href="#" class="inactiveNavBtn borderNav">cartelera</a>
+                    	<ul class="ulLevel2">
+                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">horarios</a></li>
+                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">estrenos</a></li>
+                        </ul>
+                    </li>
+                    <li class="navLevel1"><a href="#" class="inactiveNavBtn borderNav">galer&iacute;a</a></li>
+                    <li class="navLevel1"><a href="#" class="inactiveNavBtn borderNav">contacto</a></li>
                </ul>
             </div>
         </div>
@@ -57,23 +67,24 @@
                         </a>             
                     </li>
 				</ul>
-            </div> 
-            <div class="socialLinkCont">
-                <a href="#"> 
-                    <img src="images/facebookIco.png" alt="" width="17" height="17"/>			
-                </a>
-                <a href="#"> 
-                    <img src="images/tweetIco.png" alt="" width="17" height="17"/>			
-                </a> 
-                <a href="#"> 
-                    <img src="images/googIcon.png" alt="" width="17" height="17"/>			
-                </a>  
             </div>      
         </div>
         <div class="footer">
+        <div class="socialLinkCont cf">
+                <a href="#" class="socialLink socialBtnMargin"> 
+                    <img src="images/facebookIco.png" alt="" width="17" height="17"/>			
+                </a>
+                <a href="#" class="socialLink socialBtnMargin"> 
+                    <img src="images/tweetIco.png" alt="" width="17" height="17"/>			
+                </a> 
+                <a href="#" class="socialLink"> 
+                    <img src="images/googIcon.png" alt="" width="17" height="17"/>			
+                </a>  
+            </div> 
         </div>
     </div>
     <script language="javascript" type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
     <script language="javascript" type="text/javascript" src="scripts/carousel.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/subMenus.js"></script>
 </body>
 </html>
