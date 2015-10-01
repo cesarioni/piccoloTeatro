@@ -152,4 +152,10 @@ div{
 .socialBtnMargin{
 	margin-right:9px;
 }	
-	
+@media screen and (max-width: 960px) {
+   #mainContainer{
+	width:800px;
+	padding:50px 0 0 0;
+	margin:0 auto;
+	}
+}
