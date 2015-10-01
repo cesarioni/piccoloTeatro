@@ -90,9 +90,9 @@ div{
 /*Carousel TEMPLATE*/
 .jumbotron{
 	width:100%;
-	height:620px;
-	position:relative;
-	background-color:#F66;
+	/*height:620px;*/
+	/*position:relative;*/
+	/*background-color:#0F9;*/
 	overflow:hidden;
 }
 .jumboQuote{
@@ -126,60 +126,11 @@ div{
 	top:236px;
 	font-weight:normal;
 }
-.arrow{
-	width:45px;
-	height:70px;
-	position:absolute;
-	z-index:70;
-	opacity:0.1;
-	-webkit-transition: opacity 1s; /* Safari */
-    transition: opacity 1s;
-}
-.arrow:hover{
-	opacity:1;
-}		
-.jumboNextArrow{
-	right:0;
-	top:44.35%;
-}
-.jumboPrevArrow{
-	top:44.35%;
-}
-#slides{
-	display:block;
-	width:4800px;/*width of images multiplied by image number*/
-	height:620px;
-	background-color:#F00;
+.flexslider{
+	background:none;
+	border:none;
+	/*box-shadow:none;*/
 	margin:0px;
-	margin-left:0px;
-	padding:0px;
-	position:relative;
-
-}
-.imgSlide{
-	position:absolute;
-	list-style-type:none;
-	width:960px;
-	height:620px;
-}
-.imgCarousel{	
-	width:100%;
-	height:auto;
-}
-.slideA{
-	left:0;
-}
-.slideB{
-	left:960px;
-}
-.slideC{
-	left:1920px;
-}
-.slideD{
-	left:2880px;
-}
-.slideE{
-	left:3840px;
 }
 /*End of carousel style*/
 .footer{

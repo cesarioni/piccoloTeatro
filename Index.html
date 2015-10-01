@@ -2,7 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style/flexslider.css" type="text/css">
 <link rel="stylesheet" type="text/css" href="style/styles.css">
+<script language="javascript" type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
+<script src="scripts/jquery.flexslider.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/carousel.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/subMenus.js"></script>
 <title>Untitled Document</title>
 </head>
 
@@ -36,39 +41,39 @@
         </div>
         <div class="mainContent">
         	<div class="jumbotron">
-            	<p class="jumboQuote quoteA">presentando</p>
+            	<!--<p class="jumboQuote quoteA">presentando</p>
             	<a  href="#" class="jumboQuote inactiveNavBtn quoteB">Baravibus</a>
-                <p class="jumboQuote quoteC">primera funci&oacute;n 21 de junio</p>
+                <p class="jumboQuote quoteC">primera funci&oacute;n 21 de junio</p>-->
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li>
+                        <a href="#">
+                        	<img src="images/dummy1.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        	<img src="images/dummy2.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        	<img src="images/dummy3.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        	<img src="images/dummy4.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        	<img src="images/dummy5.jpg" />
+                        </a>
+                    </li>
+                  </ul>
+                </div>
                 <!--<a  href="#" class="jumboQuote inactiveNavBtn quoteD">compra tus entradas</a>-->
-                <div class="arrow jumboNextArrow"><img src="images/arrowsCarouselNext.png" alt="" width="50" height="70" /></div>
-                <div class="arrow jumboPrevArrow"><img src="images/arrowsCarouselPrev.png" alt="" width="50" height="70" /></div>
-                <ul id="slides">
-                	<li class="imgSlide slideA">
-                        <a href="#" class="jumboImg imgA"> 
-                        	<img src="images/dummy1.jpg" alt="" width="960" height="620" />			
-                        </a>             
-                    </li>    
-                    <li class="imgSlide slideB">
-                        <a href="#" class="jumboImg imgB">        
-                        	<img class="imgCarousel" src="images/dummy2.jpg" alt=""/>        	
-                        </a>        
-                    </li>
-                    <li class="imgSlide slideC">
-                        <a href="#" class="jumboImg imgC">        
-                        	<img class="imgCarousel" src="images/dummy3.jpg" alt=""/>        	
-                        </a>        
-                    </li>
-                   <li class="imgSlide slideD">
-                        <a href="#" class="jumboImg imgD"> 
-                        	<img class="imgCarousel" src="images/dummy4.jpg" alt=""/>			
-                        </a>             
-                    </li>
-                    <li class="imgSlide slideE">
-                        <a href="#" class="jumboImg imgD"> 
-                        	<img class="imgCarousel" src="images/dummy5.jpg" alt=""/>			
-                        </a>             
-                    </li>
-				</ul>
             </div>      
         </div>
         <div class="footer">
@@ -85,8 +90,5 @@
             </div> 
         </div>
     </div>
-    <script language="javascript" type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
-    <script language="javascript" type="text/javascript" src="scripts/carousel.js"></script>
-    <script language="javascript" type="text/javascript" src="scripts/subMenus.js"></script>
 </body>
 </html>
