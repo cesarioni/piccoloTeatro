@@ -1,6 +1,6 @@
 // JavaScript Document
 $(document).ready(function(){
-	var $btnSubmenu=$(".navLevel1");
+	/*var $btnSubmenu=$(".navLevel1");
 	var $submenu=$(".ulLevel2");
 	var $notLinked=$(".notlinked");
 	var animando=false;
@@ -10,25 +10,18 @@ $(document).ready(function(){
 
 	function showSubmenu(){
 		$(this).children(".ulLevel2").css("display","block");
-		/*animando=false;
-		if(animando==false){
-			animando=true;
-			$(this).animate({'height':'65px'}, 100, function(){
-				$(this).children(".ulLevel2").css("display","block");
-				animando=false;
-				});
-		}*/
 	}
 	function hideSubmenu(){
 		$(this).children(".ulLevel2").css("display","none");
-		/*animando=false;
-		console.log("logritas");
-		if(animando==false){
-			animando=true;
-			$(this).animate({'height':'15px'}, 100, function(){
-			$(this).children(".ulLevel2").css("display","none");
-			animando=false;
-			});
-		}*/
-	}
+	}*/
+	$('.myMenu > li').bind('mouseover', openSubMenu);
+	$('.myMenu > li').bind('mouseout', closeSubMenu);
+		
+	function openSubMenu() {
+		$(this).find('ul').css('visibility', 'visible');	
+	};	
+		
+	function closeSubMenu() {
+		$(this).find('ul').css('visibility', 'hidden');	
+	};	
 });
