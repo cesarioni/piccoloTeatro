@@ -380,6 +380,10 @@ div{
 .extraTopPadding{	
 	padding:10px 0 10px 0;
 }
+/*HORARIO COMPLETO*/
+.horarioObraContainer{
+	padding:0 0 20px 0;
+}
 /*GALERIA*/
 .galeriaContainer{
 	padding:50px;
@@ -400,6 +404,16 @@ div{
 .borderbottomGal{
 	border-bottom: medium solid #000;
 	padding:0 0 20px 0;
+}
+/*HORARIO TALLER*/
+.horaTallerContainer{
+	padding:50px;
+}	
+.horaTallerContainer table{
+	width:100%;
+}
+.horaTallerContainer table tr td{
+	text-align:center;
 }
 /*CONTACTO*/
 .contactoContainer{
