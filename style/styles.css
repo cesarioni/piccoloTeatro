@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100);
 .cf {
     zoom: 1;
 }
@@ -52,7 +53,9 @@ div{
 	width:100%;
 }
 .mainNav ul li a, h1, h2{
-	font-family: "Open Sans",sans-serif;
+	font-family: 'Lato', sans-serif;
+	/*font-weight:lighter;*/
+	/*font-family: "Open Sans",sans-serif;*/
 	font-style: normal;
 	/*font-weight: bold;*/
 	font-size: 11px;
@@ -258,35 +261,87 @@ div{
 	font-family: "Open Sans",sans-serif;
 	font-size: 13px;
 }
+/*PROFESORES*/
+.profesoresContainer{
+	padding:50px;
+}	
+.profesoresSectionInner{
+	margin:0 auto;
+	width:250px;
+	padding:30px 0 10px 0;
+	border-bottom: medium solid #000;
+}
+.bordeProfTop{
+	border-top: medium solid #000;
+}	
+.bordeProfBottom{
+	border-bottom: medium solid #000;
+}	
+profesoresSectionContainer{
+	padding:0 0 50px 0;
+}	
+.profesoresSection{
+	width:293px;
+	float:left;
+}
+.profesoresSectionInner span{
+	font-family: "Open Sans",sans-serif;
+	text-transform:uppercase;
+	font-size:16px;
+	display:block;
+	padding:10px 0;
+	font-weight:300;
+}
+.profesoresSectionInner p{
+	font-style:italic;
+	font-family: "Open Sans",sans-serif;
+	font-size: 13px;
+}
 /*CARTELERA*/
 .carteleraContainer{
 	padding:50px;
 }
 .carteleraContainer li{
-	width:440px;
+	width:33.3%;
 	padding:0 0 20px 0;
 	float:left;
-	height:125px;
+}
+.carteleraObraInner{
+	width:250px;
+	margin:0 auto;
+	padding:10px 0;
+	border-bottom:medium solid #000;
+	/*border-top:medium solid #000;*/
 }
 .obraDescripContainer{
-	width:130px;
-	height:125px;
-	padding: 0 0 0 20px;
-	position:relative;
+	padding: 0 0 0 0;
 }
 .carteleraContainer h2{
-	font-size:16px;
+	font-size:15px;
+	padding:10px 0;
 	text-align:left;
 	text-transform:uppercase;
 	font-weight:normal;
 	color:#000;
 }	
 .carteleraContainer p{
-	padding:3px 0;
+	padding:0 0 10px 0;
 	font-size:13px;
 	font-family: "Open Sans",sans-serif;
 	color:#333;
-}	
+}
+.obraHorario{
+	font-style:italic;
+	text-align:center;
+	display:block;
+	color:#FFF;
+	font-family: "Open Sans",sans-serif;
+	font-size:13px;
+	padding:3px 0;
+	background-color:#000;
+	border-bottom:medium solid #FFF;
+	border-top:medium solid #FFF;
+}		
 .piccoloBtn{
 
 	width:100px;
