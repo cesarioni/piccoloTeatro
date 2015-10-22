@@ -24,4 +24,14 @@ $(document).ready(function(){
 	function closeSubMenu() {
 		$(this).find('ul').css('visibility', 'hidden');	
 	};	
+	
+	$('.displayInfo').bind('mouseover', openInfo);
+	$('.displayInfo').bind('mouseout', closeInfo);
+	function openInfo() {
+		$(this).find('p').css('visibility', 'visible');	
+	};	
+		
+	function closeInfo() {
+		$(this).find('p').css('visibility', 'hidden');	
+	};	
 });

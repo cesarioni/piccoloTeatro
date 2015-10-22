@@ -297,20 +297,65 @@ profesoresSectionContainer{
 	font-family: "Open Sans",sans-serif;
 	font-size: 13px;
 }
+.italica{
+	font-style:italic;
+}
+/*TALLERES*/
+.talleresContainer{
+	padding:50px;
+}	
+
+.talleresSectionInner{
+	margin:0 auto;
+	padding:10px 0 10px 0;
+	border-bottom: medium solid #000;
+}
+.bordeProfTop{
+	border-top: medium solid #000;
+}	
+.bordeProfBottom{
+	border-bottom: medium solid #000;
+}	
+talleresSectionContainer{
+	padding:0 0 50px 0;
+}	
+.talleresSection{
+	width:100%;
+	float:left;
+}
+.talleresSectionInner span{
+	font-family: "Open Sans",sans-serif;
+	text-transform:uppercase;
+	font-size:16px;
+	display:block;
+	padding:10px 0;
+	font-weight:300;
+}
+.talleresSectionInner p{
+	padding:10px 0;
+	font-family: "Open Sans",sans-serif;
+	font-size: 13px;
+}
+.talleresSectionInner a{
+	font-style:italic;
+	font-family: "Open Sans",sans-serif;
+	font-size: 13px;	
+	color:#333;
+}
 /*CARTELERA*/
 .carteleraContainer{
-	padding:50px;
+	padding:80px 50px 50px 50px;
 }
 .carteleraContainer li{
 	width:33.3%;
-	padding:0 0 20px 0;
+	padding:0 0 50px 0;
 	float:left;
 }
 .carteleraObraInner{
 	width:250px;
 	margin:0 auto;
 	padding:10px 0;
-	border-bottom:medium solid #000;
+	border-bottom:2px solid #666;
 	/*border-top:medium solid #000;*/
 }
 .obraDescripContainer{
@@ -356,6 +401,34 @@ profesoresSectionContainer{
 	text-transform:uppercase;
 	font-weight:bold;
 	text-align:center;
+}
+.displayInfo{
+	position:relative;
+}
+.displayInfo span{
+	display:block;
+	cursor:pointer;
+	font-family: "Open Sans",sans-serif;
+	font-size:13px;
+	color:#333;
+	font-style:italic;
+}
+.displayInfo div{
+	display:block;
+	position:absolute;
+	left:0;
+	width:100%;
+	visibility:hidden;
+	margin:0 0 0 0;
+	padding:5px 0;
+	z-index:9999;
+	box-shadow:#000;
+}
+.displayInfo p {
+	padding:10px;
+	color:#FFF;
+	background-color:#000;
+	text-align:left;
 }
 /*HORARIOS*/
 
@@ -466,9 +539,26 @@ profesoresSectionContainer{
 }	
 .horaTallerContainer table{
 	width:100%;
+	border-spacing:0px;
 }
 .horaTallerContainer table tr td{
-	text-align:center;
+	text-align:left;
+	font-family: "Open Sans",sans-serif;
+	font-size: 12px;
+	padding:5px 5px;
+}
+.encabezados {
+	background-color:#000;
+	color:#FFF;
+	text-transform:uppercase;
+	font-family: "Open Sans",sans-serif;
+	font-size: 13px;
+	}
+.lightBackground{
+	background-color:#E9E9E9;
+}
+.darkBackground{
+	background-color:#CCC;
 }
 /*CONTACTO*/
 .contactoContainer{
