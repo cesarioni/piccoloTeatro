@@ -24,7 +24,7 @@ $(document).ready(function(){
 	function closeSubMenu() {
 		$(this).find('ul').css('visibility', 'hidden');	
 	};	
-	
+	/*
 	$('.displayInfo').bind('mouseover', openInfo);
 	$('.displayInfo').bind('mouseout', closeInfo);
 	function openInfo() {
@@ -34,4 +34,5 @@ $(document).ready(function(){
 	function closeInfo() {
 		$(this).find('p').css('visibility', 'hidden');	
 	};	
+	*/
 });
