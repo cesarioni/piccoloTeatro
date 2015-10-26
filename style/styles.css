@@ -431,6 +431,8 @@ talleresSectionContainer{
 	text-align:left;
 }
 .descripcionDetalle img{
+	padding:10px 0;
+	border-top:medium solid #000;
 	max-width:100%;
 	margin:0 auto;
 }
