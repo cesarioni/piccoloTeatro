@@ -1,5 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 25px;
+  width:auto;
+  max-width: 250px;
+  margin: 0 auto; 
+}
+
 .mfp-zoom-in {
   /* start state */
   /* animate in */

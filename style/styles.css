@@ -361,7 +361,7 @@ talleresSectionContainer{
 .obraDescripContainer{
 	padding: 0 0 0 0;
 }
-.carteleraContainer h2{
+.carteleraContainer h2, .tituloNormal{
 	font-size:15px;
 	padding:10px 0;
 	text-align:left;
@@ -369,7 +369,7 @@ talleresSectionContainer{
 	font-weight:normal;
 	color:#000;
 }	
-.carteleraContainer p{
+.carteleraContainer p, .parrafoNormal{
 	padding:0 0 10px 0;
 	font-size:13px;
 	font-family: "Open Sans",sans-serif;
@@ -405,7 +405,7 @@ talleresSectionContainer{
 .displayInfo{
 	position:relative;
 }
-.displayInfo span{
+.displayInfo span, .btnLeerMas{
 	display:block;
 	cursor:pointer;
 	font-family: "Open Sans",sans-serif;
@@ -429,6 +429,17 @@ talleresSectionContainer{
 	color:#FFF;
 	background-color:#000;
 	text-align:left;
+}
+.descripcionDetalle img{
+	max-width:100%;
+	margin:0 auto;
+}
+.descripcionDetalle h2 {
+	text-align:center;
+	padding:30px 0;
+}
+.descripcionDetalle p {
+	padding:10px 0;
 }
 /*HORARIOS*/
 
