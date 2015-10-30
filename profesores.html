@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="style/flexslider.css" type="text/css"/>
 <link rel="stylesheet" type="text/css" href="style/styles.css"/>
 <link rel="stylesheet" type="text/css" href="style/lightbox.css"/>
+<link rel="stylesheet" href="style/jquery.mCustomScrollbar.css" />
 <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0"/>
 <script language="javascript" type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
 <script src="scripts/jquery.flexslider.js" type="text/javascript"></script>
@@ -12,7 +13,9 @@
 <script language="javascript" type="text/javascript" src="scripts/subMenus.js"></script>
 <script language="javascript" type="text/javascript" src="scripts/lightbox.js"></script>
 <script language="javascript" type="text/javascript" src="scripts/lightboxcall.js"></script>
-<title>Home</title>
+<script language="javascript" type="text/javascript" src="scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/scripts.js"></script>
+<title>profesores</title>
 </head>
 
 <body>
@@ -23,28 +26,28 @@
             </div>
             <div class="mainNav cf">
             	<ul class="ulLevel1 myMenu  cf">
-                	<li class="navLevel1"><a href="home.html" class="activeNavBtn">inicio</a></li>
+                	<li class="navLevel1"><a href="home.html" class="inactiveNavBtn">inicio</a></li>
                     <li class="navLevel1 borderNav"><a href="nosotros.html" class="inactiveNavBtn">nosotros</a></li>
-                    <li class="navLevel1 borderNav"><a href="cartelera.html" class="inactiveNavBtn notlinked">cartelera</a>
+                    <li class="navLevel1 borderNav"><a href="cartelera.html" class="inactiveNavBtn">cartelera</a>
                     	<!--<ul class="ulLevel2">
                             <li class="navLevel2"><a href="horarios.html" class="inactiveNavBtn">horarios</a></li>
                         </ul>-->
                     </li>
-                    <li class="navLevel1 borderNav"><a href="talleres.html" class="inactiveNavBtn notlinked">talleres</a>
+                    <li class="navLevel1 borderNav"><a href="talleres.html" class="inactiveNavBtn">talleres</a>
                     	<ul class="ulLevel2">
-                            <li class="navLevel2"><a href="horariosTaller.html" class="inactiveNavBtn">horarios</a></li>
-                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>
+                            <!--<li class="navLevel2"><a href="horariosTaller.html" class="inactiveNavBtn">horarios</a></li>
+                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>-->
                             <li class="navLevel2"><a href="profesores.html" class="inactiveNavBtn">profesores</a></li>
                         </ul>
                     </li>
                     <li class="navLevel1 borderNav"><a href="#" class="inactiveNavBtn notlinked">academia</a>
                     	<ul class="ulLevel2">
-                            <li class="navLevel2"><a href="http://api.jquery.com/event.preventdefault/" class="inactiveNavBtn">horarios</a></li>
-                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>
+                            <!--<li class="navLevel2"><a href="http://api.jquery.com/event.preventdefault/" class="inactiveNavBtn">horarios</a></li>
+                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>-->
                             <li class="navLevel2"><a href="profesores.html" class="inactiveNavBtn">profesores</a></li>
                         </ul>
                     </li>
-                    <li class="navLevel1"><a href="#" class="inactiveNavBtn borderNav">fiestas</a></li>
+                    <li class="navLevel1"><a href="#" class="inactiveNavBtn borderNav">eventos</a></li>
                     <li class="navLevel1"><a href="galeria.html" class="inactiveNavBtn borderNav">galer&iacute;a</a></li>
                     <li class="navLevel1"><a href="contacto.html" class="inactiveNavBtn borderNav">contacto</a></li>
                </ul>
@@ -52,64 +55,134 @@
         </div>
         <div class="mainContent innerPageContent">
         	<div class="pageTitleContainer">
-        	<h1 class="pageTitle">nosotros</h1>
+        	<h1 class="pageTitle">profesores</h1>
             </div>
             <div class="profesoresContainer">
                 <div class="profesoresSectionContainer cf"> 
                     <div class="profesoresSection">
-                        <div class="profesoresSectionInner bordeProfTop">
+                        <div class="profesoresSectionInner bordeProfTop descripcionPopUp">
                             <img src="images/magalyLlumipanta.jpg" alt=""/>
                             <span>magaly llumipanta</span>
                             <a href="#magalyLlumi" class="btnLeerMas" data-effect="mfp-zoom-in">leer m&aacute;s</a>
-							<div id="magalyLlumi" class="white-popup mfp-with-anim mfp-hide">
+                            <div id="magalyLlumi" class="white-popup mfp-with-anim mfp-hide">
                                 <div class="descripcionDetalle">
                                     <h2 class="tituloNormal">magaly llumipanta</h2>
                                      <img src="images/magalyLlumipanta.jpg" alt=""/>
-                                    <p class="parrafoNormal">Master de Danza Movimiento Terapia (Universidad Nacional del Arte, Argentina) y Entrenamiento en Espacio (Brecha, Buenos Aires).  Bailarina formada con el maestro Wilson Pico, Escuela Exploradores de la Danza, Frente de Danza Independiente de Quito, Susana González (Argentina), Eugenia Estévez (Argentina), Rea Volij (Argentina), Composición Coreográfica con mención en Expresión Corporal (Universidad Nacional del Arte, Argentina). Cursos realizados en Pilates para la corrección postural en Cuerpo Consiente, Buenos Aires. Socióloga de la Pontificia Universidad Católica del Ecuador, especializada en Desarrollo.</p>
+                                    <div class="parrafoDescripcionCont makeScroll">
+                                        <p class="parrafoNormal">
+                                        Master de Danza Movimiento Terapia (Universidad Nacional del Arte, Argentina) y Entrenamiento en Espacio (Brecha, Buenos Aires).</p><p class="parrafoNormal">  Bailarina formada con el maestro Wilson Pico, Escuela Exploradores de la Danza, Frente de Danza Independiente de Quito, Susana González (Argentina), Eugenia Estévez (Argentina), Rea Volij (Argentina), Composición Coreográfica con mención en Expresión Corporal (Universidad Nacional del Arte, Argentina). </p> <p class="parrafoNormal">Cursos realizados en Pilates para la corrección postural en Cuerpo Consiente, Buenos Aires. Socióloga de la Pontificia Universidad Católica del Ecuador, especializada en Desarrollo.    
+                                        </p>
+                                    </div>
                                 </div>
                             </div>                            
                         </div>
                     </div>
                     <div class="profesoresSection">
-                        <div class="profesoresSectionInner bordeProfTop">
+                        <div class="profesoresSectionInner bordeProfTop descripcionPopUp">
                             <img src="images/tonoHarris.jpg" alt=""/>
                             <span>toño harris</span>
-                            <a href="#tonoHarris" class="btnLeerMas">leer m&aacute;s</a>
+                            <a href="#tonoHarris" class="btnLeerMas" data-effect="mfp-zoom-in">leer m&aacute;s</a>
+                             <div id="tonoHarris" class="white-popup mfp-with-anim mfp-hide">
+                                <div class="descripcionDetalle">
+                                    <h2 class="tituloNormal">toño harris</h2>
+                                     <img src="images/tonoHarris.jpg" alt=""/>
+                                    <div class="parrafoDescripcionCont makeScroll">
+                                        <p class="parrafoNormal">
+                                        Diseñador, productor, director, actor y profesor.  Estudios en Artes escénicas, Teatro gestual, Mascaras de la comedia del arte, Payasería-Clown y Bufón en la Escuela de Teatro Gestual “El Cronopio” (Quito) y en talleres con varios maestros nacionales e internacionales.</p>  <p class="parrafoNormal">Dictó talleres en la Universidad Central del Ecuador, Universidad del Azuay (Cuenca) y talleres independientes para adultos y niños. Co-fundador integrante del grupo “Clowndestinos” (desde 2004 Ecuador) con los que ha realizado más de diez puestas en escena y varios proyectos culturales y sociales.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>       
                     <div class="profesoresSection">
-                        <div class="profesoresSectionInner bordeProfTop">
+                        <div class="profesoresSectionInner bordeProfTop descripcionPopUp">
                             <img src="images/francGonzales.jpg" alt=""/>
                             <span>Franc Gonzales</span>
-                             <a href="#tonoHarris" class="btnLeerMas">leer m&aacute;s</a>
+                             <a href="#francGonzales" class="btnLeerMas" data-effect="mfp-zoom-in">leer m&aacute;s</a>
+                              <div id="francGonzales" class="white-popup mfp-with-anim mfp-hide">
+                                <div class="descripcionDetalle">
+                                    <h2 class="tituloNormal">Franc Gonzales</h2>
+                                     <img src="images/francGonzales.jpg" alt=""/>
+                                    <div class="parrafoDescripcionCont makeScroll">
+                                        <p class="parrafoNormal">
+                                        Pedagogo y Actor y Mimo graduado en el Laboratorio Teatral Malayerba, realiza estudios en Arte Dramático en el Pasadena City College (Pasadena-California) y estudios de actuación e Historia del Teatro en el American Academy of Dramatic Arts (Pasadena-California). </p><p class="parrafoNormal"> En el 2007 participa del taller de Teatro del Oprimido con Augusto Boal en el Centro de Teatro del Oprimido Río de Janeiro. Dirige el Departamento de Teatro del Colegio Menor San Francisco de Quito, desde el año 2014. Es parte de la Compañía Ecuatoriana de Mimo  
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div> 
                     <div class="profesoresSection">
-                        <div class="profesoresSectionInner">
+                        <div class="profesoresSectionInner descripcionPopUp">
                             <img src="images/fernandaKarolys.jpg" alt=""/>
                             <span>fernanda karolys</span>
-                            <p> </p>
+                            <a href="#ferKarolis" class="btnLeerMas" data-effect="mfp-zoom-in">leer m&aacute;s</a>
+                              <div id="ferKarolis" class="white-popup mfp-with-anim mfp-hide">
+                                <div class="descripcionDetalle">
+                                    <h2 class="tituloNormal">fernanda karolys</h2>
+                                     <img src="images/fernandaKarolys.jpg" alt=""/>
+                                    <div class="parrafoDescripcionCont makeScroll">
+                                        <p class="parrafoNormal">
+                                        Biograf&iacute;a   
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div> 
                     <div class="profesoresSection">
-                        <div class="profesoresSectionInner">
+                        <div class="profesoresSectionInner descripcionPopUp">
                             <img src="images/gallardoFe.jpg" alt=""/>
                             <span>gallardo de la fe</span>
-                            <p> </p>
+                            <a href="#gallardoFe" class="btnLeerMas" data-effect="mfp-zoom-in">leer m&aacute;s</a>
+                              <div id="gallardoFe" class="white-popup mfp-with-anim mfp-hide">
+                                <div class="descripcionDetalle">
+                                    <h2 class="tituloNormal">gallardo de la fe</h2>
+                                     <img src="images/gallardoFe.jpg" alt=""/>
+                                    <div class="parrafoDescripcionCont makeScroll">
+                                        <p class="parrafoNormal">
+                                        Biograf&iacute;a   
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="profesoresSection">
-                        <div class="profesoresSectionInner">
+                        <div class="profesoresSectionInner descripcionPopUp">
                             <img src="images/camilaFernandez.jpg" alt=""/>
                             <span>camila hernandez</span>
-                            <p> </p>
+                            <a href="#camiHernandez" class="btnLeerMas" data-effect="mfp-zoom-in">leer m&aacute;s</a>
+                              <div id="camiHernandez" class="white-popup mfp-with-anim mfp-hide">
+                                <div class="descripcionDetalle">
+                                    <h2 class="tituloNormal">camila hernandez</h2>
+                                     <img src="images/camilaFernandez.jpg" alt=""/>
+                                    <div class="parrafoDescripcionCont makeScroll">
+                                        <p class="parrafoNormal">
+                                        Camila es bailarina, coreógrafa, y educadora. Durante sus estudios de danza y antropología en Bard College en el estado de Nueva York, estudia bajo la supervisión de miembros de la reconocida Bill T. Jones Dance Company y de Merce Cunningham Dance Company, y asiste a prestigiosos festivales internacionales de danza.</p> <p class="parrafoNormal">Vivió en Ghana, África por seis meses, donde estudia danza del oeste de África con Kofi Gademeh. Una vez terminada su carrera, vive en NYC un año trabajando como profesora de danza en una escuela publica de Queens, NY.</p><p class="parrafoNormal"> Camila ahora se basa en Quito, su ciudad natal, como educadora, interprete y coreógrafa independiente.    
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="profesoresSection">
-                        <div class="profesoresSectionInner">
+                        <div class="profesoresSectionInner descripcionPopUp">
                             <img src="images/bernardoRuales.jpg" alt=""/>
                             <span>bernardo ruales</span>
-                            <p> </p>
+                            <a href="#bernardoRuales" class="btnLeerMas" data-effect="mfp-zoom-in">leer m&aacute;s</a>
+                              <div id="bernardoRuales" class="white-popup mfp-with-anim mfp-hide">
+                                <div class="descripcionDetalle">
+                                    <h2 class="tituloNormal">bernardo ruales</h2>
+                                     <img src="images/bernardoRuales.jpg" alt=""/>
+                                    <div class="parrafoDescripcionCont makeScroll">
+                                        <p class="parrafoNormal">
+                                        Biograf&iacute;a   
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>                          
                 </div>
@@ -118,14 +191,17 @@
         <div class="footer">
         	<div class="socialLinkCont cf">
                 <a href="#" class="socialLink socialBtnMargin"> 
-                    <img src="images/facebookIco.png" alt="" width="17" height="17"/>			
+                	<img class="socialHoverImg" src="images/facebookIcoHover.png" alt="" width="17" height="17"/>
+                    <img class="socialImg" src="images/facebookIco.png" alt="" width="17" height="17"/>			
                 </a>
                 <a href="#" class="socialLink socialBtnMargin"> 
-                    <img src="images/tweetIco.png" alt="" width="17" height="17"/>			
+                	<img class="socialHoverImg" src="images/tweetIcoHover.png" alt="" width="17" height="17"/>	
+                    <img class="socialImg" src="images/tweetIco.png" alt="" width="17" height="17"/>			
                 </a> 
                 <a href="#" class="socialLink"> 
-                    <img src="images/googIcon.png" alt="" width="17" height="17"/>			
-                </a>  
+                	<img class="socialHoverImg" src="images/googIconHover.png" alt="" width="17" height="17"/>	
+                    <img class="socialImg" src="images/googIcon.png" alt="" width="17" height="17"/>		
+                </a>   
             </div> 
         </div>
     </div>

@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="style/flexslider.css" type="text/css"/>
 <link rel="stylesheet" type="text/css" href="style/styles.css"/>
 <link rel="stylesheet" type="text/css" href="style/lightbox.css"/>
+<link rel="stylesheet" href="style/jquery.mCustomScrollbar.css" />
 <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0"/>
 <script language="javascript" type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
 <script src="scripts/jquery.flexslider.js" type="text/javascript"></script>
@@ -12,7 +13,9 @@
 <script language="javascript" type="text/javascript" src="scripts/subMenus.js"></script>
 <script language="javascript" type="text/javascript" src="scripts/lightbox.js"></script>
 <script language="javascript" type="text/javascript" src="scripts/lightboxcall.js"></script>
-<title>Home</title>
+<script language="javascript" type="text/javascript" src="scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/scripts.js"></script>
+<title>cartelera</title>
 </head>
 
 <body>
@@ -23,28 +26,28 @@
             </div>
             <div class="mainNav cf">
             	<ul class="ulLevel1 myMenu  cf">
-                	<li class="navLevel1"><a href="home.html" class="activeNavBtn">inicio</a></li>
+                	<li class="navLevel1"><a href="home.html" class="inactiveNavBtn">inicio</a></li>
                     <li class="navLevel1 borderNav"><a href="nosotros.html" class="inactiveNavBtn">nosotros</a></li>
-                    <li class="navLevel1 borderNav"><a href="cartelera.html" class="inactiveNavBtn notlinked">cartelera</a>
+                    <li class="navLevel1 borderNav"><a href="cartelera.html" class="inactiveNavBtn">cartelera</a>
                     	<!--<ul class="ulLevel2">
                             <li class="navLevel2"><a href="horarios.html" class="inactiveNavBtn">horarios</a></li>
                         </ul>-->
                     </li>
-                    <li class="navLevel1 borderNav"><a href="talleres.html" class="inactiveNavBtn notlinked">talleres</a>
+                    <li class="navLevel1 borderNav"><a href="talleres.html" class="inactiveNavBtn">talleres</a>
                     	<ul class="ulLevel2">
-                            <li class="navLevel2"><a href="horariosTaller.html" class="inactiveNavBtn">horarios</a></li>
-                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>
+                            <!--<li class="navLevel2"><a href="horariosTaller.html" class="inactiveNavBtn">horarios</a></li>
+                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>-->
                             <li class="navLevel2"><a href="profesores.html" class="inactiveNavBtn">profesores</a></li>
                         </ul>
                     </li>
                     <li class="navLevel1 borderNav"><a href="#" class="inactiveNavBtn notlinked">academia</a>
                     	<ul class="ulLevel2">
-                            <li class="navLevel2"><a href="http://api.jquery.com/event.preventdefault/" class="inactiveNavBtn">horarios</a></li>
-                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>
+                            <!--<li class="navLevel2"><a href="http://api.jquery.com/event.preventdefault/" class="inactiveNavBtn">horarios</a></li>
+                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>-->
                             <li class="navLevel2"><a href="profesores.html" class="inactiveNavBtn">profesores</a></li>
                         </ul>
                     </li>
-                    <li class="navLevel1"><a href="#" class="inactiveNavBtn borderNav">fiestas</a></li>
+                    <li class="navLevel1"><a href="#" class="inactiveNavBtn borderNav">eventos</a></li>
                     <li class="navLevel1"><a href="galeria.html" class="inactiveNavBtn borderNav">galer&iacute;a</a></li>
                     <li class="navLevel1"><a href="contacto.html" class="inactiveNavBtn borderNav">contacto</a></li>
                </ul>
@@ -59,7 +62,7 @@
                 <li>
                 	<div class="carteleraObraInner bordeProfTop">
                         <img src="images/imagesCartelera/baravibusimg.jpg" alt=""/>
-                        <div class="obraDescripContainer">
+                        <div class="obraDescripContainer descripcionPopUp">
                             <h2>baravibus</h2>
                             <p>Categor&iacute;a: comedia infantil</p>
                             <p>Del 3 al 11 de octubre<br />
@@ -83,7 +86,7 @@
                 <li>
                 	<div class="carteleraObraInner bordeProfTop">
                         <img src="images/imagesCartelera/cajaNunaimg.jpg" alt=""/>
-                        <div class="obraDescripContainer">
+                        <div class="obraDescripContainer descripcionPopUp">
                             <h2>en caja de nuna</h2>
                             <p>Categor&iacute;a: comedia infantil</p>
                             <p>Del 17 de octubre al 1 de noviembre<br />
@@ -107,7 +110,7 @@
                 <li>
                 	<div class="carteleraObraInner bordeProfTop">
                         <img src="images/imagesCartelera/LatMagimg.jpg" alt=""/>
-                        <div class="obraDescripContainer">
+                        <div class="obraDescripContainer descripcionPopUp">
                             <h2>latitud magica</h2>
                             <p>Categor&iacute;a: show de magia</p>
                             <p>Del 2 al 24 de octubre<br />
@@ -131,7 +134,7 @@
                 <li>
                 	<div class="carteleraObraInner bordeProfTop">
                         <img src="images/imagesCartelera/luchaimg.jpg" alt=""/>
-                        <div class="obraDescripContainer">
+                        <div class="obraDescripContainer descripcionPopUp">
                             <h2>lucha libre de prejuicios</h2>
                             <p>Categor&iacute;a: monólogo</p>
                             <p>Del 1 al 29 de octubre<br />
@@ -155,7 +158,7 @@
                 <li>
                 	<div class="carteleraObraInner bordeProfTop">
                         <img src="images/imagesCartelera/magiaimg.jpg" alt=""/>
-                        <div class="obraDescripContainer">
+                        <div class="obraDescripContainer descripcionPopUp">
                         <h2>magia por halloween</h2>
                         <p>Categor&iacute;a: show de magia</p>
                         <p>Viernes 30 y s&aacute;bado 31 de octubre<br />
@@ -184,13 +187,16 @@
         <div class="footer">
         	<div class="socialLinkCont cf">
                 <a href="#" class="socialLink socialBtnMargin"> 
-                    <img src="images/facebookIco.png" alt="" width="17" height="17"/>			
+                	<img class="socialHoverImg" src="images/facebookIcoHover.png" alt="" width="17" height="17"/>
+                    <img class="socialImg" src="images/facebookIco.png" alt="" width="17" height="17"/>			
                 </a>
                 <a href="#" class="socialLink socialBtnMargin"> 
-                    <img src="images/tweetIco.png" alt="" width="17" height="17"/>			
+                	<img class="socialHoverImg" src="images/tweetIcoHover.png" alt="" width="17" height="17"/>	
+                    <img class="socialImg" src="images/tweetIco.png" alt="" width="17" height="17"/>			
                 </a> 
                 <a href="#" class="socialLink"> 
-                    <img src="images/googIcon.png" alt="" width="17" height="17"/>			
+                	<img class="socialHoverImg" src="images/googIconHover.png" alt="" width="17" height="17"/>	
+                    <img class="socialImg" src="images/googIcon.png" alt="" width="17" height="17"/>		
                 </a>  
             </div> 
         </div>

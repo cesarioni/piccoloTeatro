@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="style/flexslider.css" type="text/css"/>
 <link rel="stylesheet" type="text/css" href="style/styles.css"/>
 <link rel="stylesheet" type="text/css" href="style/lightbox.css"/>
+<link rel="stylesheet" href="style/jquery.mCustomScrollbar.css" />
 <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0"/>
 <script language="javascript" type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
 <script src="scripts/jquery.flexslider.js" type="text/javascript"></script>
@@ -12,7 +13,9 @@
 <script language="javascript" type="text/javascript" src="scripts/subMenus.js"></script>
 <script language="javascript" type="text/javascript" src="scripts/lightbox.js"></script>
 <script language="javascript" type="text/javascript" src="scripts/lightboxcall.js"></script>
-<title>Home</title>
+<script language="javascript" type="text/javascript" src="scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/scripts.js"></script>
+<title>galeria</title>
 </head>
 
 <body>
@@ -22,29 +25,32 @@
             	<img id="headerLogo" src="images/logoPiccolo.png" alt="" />
             </div>
             <div class="mainNav cf">
+            	<div>
+                	<img id="imgSandwich" src="images/responsive_menuIcon.png" width="60px" height="60px" />
+                </div>
             	<ul class="ulLevel1 myMenu  cf">
-                	<li class="navLevel1"><a href="home.html" class="activeNavBtn">inicio</a></li>
+                	<li class="navLevel1"><a href="home.html" class="inactiveNavBtn">inicio</a></li>
                     <li class="navLevel1 borderNav"><a href="nosotros.html" class="inactiveNavBtn">nosotros</a></li>
-                    <li class="navLevel1 borderNav"><a href="cartelera.html" class="inactiveNavBtn notlinked">cartelera</a>
+                    <li class="navLevel1 borderNav"><a href="cartelera.html" class="inactiveNavBtn">cartelera</a>
                     	<!--<ul class="ulLevel2">
                             <li class="navLevel2"><a href="horarios.html" class="inactiveNavBtn">horarios</a></li>
                         </ul>-->
                     </li>
-                    <li class="navLevel1 borderNav"><a href="talleres.html" class="inactiveNavBtn notlinked">talleres</a>
-                    	<ul class="ulLevel2">
-                            <li class="navLevel2"><a href="horariosTaller.html" class="inactiveNavBtn">horarios</a></li>
-                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>
-                            <li class="navLevel2"><a href="profesores.html" class="inactiveNavBtn">profesores</a></li>
-                        </ul>
+                    <li class="navLevel1 borderNav"><a href="talleres.html" class="inactiveNavBtn">talleres</a>
+                    	<!--<ul class="ulLevel2">-->
+                            <!--<li class="navLevel2"><a href="horariosTaller.html" class="inactiveNavBtn">horarios</a></li>
+                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>-->
+                           <!-- <li class="navLevel2"><a href="profesores.html" class="inactiveNavBtn">profesores</a></li>-->
+                        <!--</ul>-->
                     </li>
                     <li class="navLevel1 borderNav"><a href="#" class="inactiveNavBtn notlinked">academia</a>
-                    	<ul class="ulLevel2">
-                            <li class="navLevel2"><a href="http://api.jquery.com/event.preventdefault/" class="inactiveNavBtn">horarios</a></li>
-                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>
-                            <li class="navLevel2"><a href="profesores.html" class="inactiveNavBtn">profesores</a></li>
-                        </ul>
+                    	<!--<ul class="ulLevel2">-->
+                            <!--<li class="navLevel2"><a href="http://api.jquery.com/event.preventdefault/" class="inactiveNavBtn">horarios</a></li>
+                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>-->
+                            <!--<li class="navLevel2"><a href="profesores.html" class="inactiveNavBtn">profesores</a></li>-->
+                        <!--</ul>-->
                     </li>
-                    <li class="navLevel1"><a href="#" class="inactiveNavBtn borderNav">fiestas</a></li>
+                    <li class="navLevel1"><a href="#" class="inactiveNavBtn borderNav">eventos</a></li>
                     <li class="navLevel1"><a href="galeria.html" class="inactiveNavBtn borderNav">galer&iacute;a</a></li>
                     <li class="navLevel1"><a href="contacto.html" class="inactiveNavBtn borderNav">contacto</a></li>
                </ul>
@@ -62,39 +68,30 @@
                 </p> -->
                 <div class="galeriaThumbsContainer">
                 	<div class="cf">
-                        <a class="imageLB" href="images/galeria1.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg " src="images/galeria1Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria2.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria2Thumb.jpg" alt="" /></a>
+                    	<a class="imageLB" href="images/galeria35.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg" src="images/galeria35Thumb.jpg" alt="" /></a>
+                        <a class="imageLB" href="images/galeria36.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria36Thumb.jpg" alt="" /></a>
                         <a class="imageLB" href="images/galeria3.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria3Thumb.jpg" alt="" /></a>
                         <a class="imageLB" href="images/galeria4.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria4Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria5.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg" src="images/galeria5Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria6.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria6Thumb.jpg" alt="" /></a>
+                        <a class="imageLB" href="images/galeria6.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg" src="images/galeria6Thumb.jpg" alt="" /></a>
                         <a class="imageLB" href="images/galeria7.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria7Thumb.jpg" alt="" /></a>
                         <a class="imageLB" href="images/galeria8.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria8Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria9.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg" src="images/galeria9Thumb.jpg" alt="" /></a>
                         <a class="imageLB" href="images/galeria10.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria10Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria11.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria11Thumb.jpg" alt="" /></a>
+                        <a class="imageLB" href="images/galeria11.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg" src="images/galeria11Thumb.jpg" alt="" /></a>
                         <a class="imageLB" href="images/galeria12.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria12Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria13.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg" src="images/galeria13Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria14.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria14Thumb.jpg" alt="" /></a>
-                        <!--<a class="imageLB" href="images/galeria15.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria15Thumb.jpg" alt="" /></a>-->
                         <a class="imageLB" href="images/galeria16.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria16Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria17.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria17Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria18.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg" src="images/galeria18Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria19.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria19Thumb.jpg" alt="" /></a>
+                        <a class="imageLB" href="images/galeria18.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria18Thumb.jpg" alt="" /></a>
+                        <a class="imageLB" href="images/galeria19.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg" src="images/galeria19Thumb.jpg" alt="" /></a>
                         <a class="imageLB" href="images/galeria20.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria20Thumb.jpg" alt="" /></a>
                         <a class="imageLB" href="images/galeria21.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria21Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria22.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg" src="images/galeria22Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria23.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria23Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria24.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria24Thumb.jpg" alt="" /></a>
+                        <a class="imageLB" href="images/galeria22.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria22Thumb.jpg" alt="" /></a>
+                        <a class="imageLB" href="images/galeria24.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg" src="images/galeria24Thumb.jpg" alt="" /></a>
                         <a class="imageLB" href="images/galeria25.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria25Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria26.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg" src="images/galeria26Thumb.jpg" alt="" /></a>
+                        <a class="imageLB" href="images/galeria26.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria26Thumb.jpg" alt="" /></a>
                         <a class="imageLB" href="images/galeria27.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria27Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria28.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria28Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria29.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria29Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria30.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg" src="images/galeria30Thumb.jpg" alt="" /></a>
+                        <a class="imageLB" href="images/galeria28.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg" src="images/galeria28Thumb.jpg" alt="" /></a>
+                        <a class="imageLB" href="images/galeria30.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria30Thumb.jpg" alt="" /></a>
                         <a class="imageLB" href="images/galeria31.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria31Thumb.jpg" alt="" /></a>
                         <a class="imageLB" href="images/galeria32.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria32Thumb.jpg" alt="" /></a>
-                        <a class="imageLB" href="images/galeria33.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg lateralPaddinggal" src="images/galeria33Thumb.jpg" alt="" /></a>
                         <a class="imageLB" href="images/galeria34.jpg" data-effect="mfp-zoom-in"><img class="galeriaImg" src="images/galeria34Thumb.jpg" alt="" /></a>
                     </div>
                 </div>
@@ -104,14 +101,17 @@
         <div class="footer">
         	<div class="socialLinkCont cf">
                 <a href="#" class="socialLink socialBtnMargin"> 
-                    <img src="images/facebookIco.png" alt="" width="17" height="17"/>			
+                	<img class="socialHoverImg" src="images/facebookIcoHover.png" alt="" width="17" height="17"/>
+                    <img class="socialImg" src="images/facebookIco.png" alt="" width="17" height="17"/>			
                 </a>
                 <a href="#" class="socialLink socialBtnMargin"> 
-                    <img src="images/tweetIco.png" alt="" width="17" height="17"/>			
+                	<img class="socialHoverImg" src="images/tweetIcoHover.png" alt="" width="17" height="17"/>	
+                    <img class="socialImg" src="images/tweetIco.png" alt="" width="17" height="17"/>			
                 </a> 
                 <a href="#" class="socialLink"> 
-                    <img src="images/googIcon.png" alt="" width="17" height="17"/>			
-                </a>  
+                	<img class="socialHoverImg" src="images/googIconHover.png" alt="" width="17" height="17"/>	
+                    <img class="socialImg" src="images/googIcon.png" alt="" width="17" height="17"/>		
+                </a>   
             </div> 
         </div>
     </div>

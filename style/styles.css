@@ -102,7 +102,7 @@ div{
 }
 
 /*style the sub menu*/
-.myMenu li ul {
+.ulLevel2 {
 	position:absolute;
 	left:-1px;
 	width:100%;
@@ -130,7 +130,16 @@ div{
 .myMenu li ul li a:link, .myMenu li ul li a:visited {
 	width:auto;
 }
-
+/*Splash screen*/
+#splashScreen div{
+	padding:100px;
+	width:800px;
+	margin:0 auto;
+}
+#splashScreen div img{
+	width:100%;
+	height:auto;
+}
 /*Carousel TEMPLATE*/
 .jumbotron{
 	width:100%;
@@ -138,6 +147,24 @@ div{
 	/*position:relative;*/
 	/*background-color:#0F9;*/
 	overflow:hidden;
+}
+.slides li{
+	position:relative;
+}	
+.quote{
+	position:absolute;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:30px;
+	display:block;
+	background-color:#000;
+	color:#FBAF3F;
+	line-height:1.4em;
+	text-transform:uppercase;
+	padding:10px;
+	top:8%;
+	/*
+	left:60px;
+	width:300px;*/
 }
 .jumboQuote{
 	display:block;
@@ -192,6 +219,10 @@ div{
 	width:17px;
 	height:17px;
 	display:block;
+	position:relative;
+}
+.socialLink img{
+	position:absolute;
 }
 .socialBtnMargin{
 	margin-right:9px;
@@ -257,9 +288,27 @@ div{
 	font-weight:300;
 }
 .nosotrosSectionInner p{
-	font-style:italic;
+	text-transform:uppercase;
 	font-family: "Open Sans",sans-serif;
-	font-size: 13px;
+	font-size: 11px;
+	padding:0 0 10px 0;
+	display:block;
+	height:30px;
+}
+.parrafoDescripcionCont{
+	padding:10px 0 0 0;
+	width:100%;
+	height:300px;
+	overflow:hidden;
+}
+.scrollContainer{
+	width:100%;
+	top:0;
+}
+.parrafoNormal{
+	text-align:left;
+	line-height:170%;
+	letter-spacing:0.5px;
 }
 /*PROFESORES*/
 .profesoresContainer{
@@ -375,6 +424,7 @@ talleresSectionContainer{
 	font-family: "Open Sans",sans-serif;
 	color:#333;
 }
+
 .obraHorario{
 	font-style:italic;
 	text-align:center;
@@ -441,7 +491,7 @@ talleresSectionContainer{
 	padding:30px 0;
 }
 .descripcionDetalle p {
-	padding:10px 0;
+	padding:5px 0;
 }
 /*HORARIOS*/
 
@@ -535,9 +585,11 @@ talleresSectionContainer{
 	padding:0 0 0 0;
 }
 .galeriaImg{
+	padding:2%;
+	width:21%;
 	float:left;
 	margin:0;
-	padding-bottom:0 0 36px 0;
+	/*padding-bottom:0 0 36px 0;*/
 	opacity: 1;
     transition: opacity .5s ease-out;
     -moz-transition: opacity .5s ease-out;
@@ -553,7 +605,7 @@ talleresSectionContainer{
 }
 */
 .lateralPaddinggal{
-	padding:0 0 36px 3%;
+	/*padding:0 0 36px 3%;*/
 }
 .borderbottomGal{
 	border-bottom: medium solid #000;
@@ -628,7 +680,7 @@ talleresSectionContainer{
 }	
 @media screen and (max-width: 980px) {
    #mainContainer{
-	width:90%;
+	width:100%;
 	padding:50px 0 0 0;
 	margin:0 auto;
 	}
@@ -644,10 +696,73 @@ talleresSectionContainer{
 	padding:0 0 0px 0;
 	}
 	.galeriaImg{
-	padding:0 0 36px 36px;
+	padding:3%;
+	width:44%;
 	}
 	.galeriaThumbsContainer{
-	width:75%;
+	width:90%;
 	margin:0 auto;
 	}
+}
+@media screen and (max-width: 700px) {
+   #mainContainer{
+	width:100%;
+	padding:50px 0 0 0;
+	margin:0 auto;
+	}
+	.logoContainer{
+	width:447px;
+	height:auto;
+	margin:0px auto 0 auto;
+	padding:20px 0 0 0;
+	}
+	.header{
+	width:100%;
+	height:auto;
+	padding:0 0 0px 0;
+	}
+	.galeriaImg{
+	padding: 0 15% 36px 15%;
+	width:70%;
+	}
+	.galeriaThumbsContainer{
+	width:90%;
+	margin:0 auto;
+	}
+	.navLevel1{
+		clear:both;
+		width:100%;
+		height:auto;
+		border:0;
+	}
+	.navLevel2{
+		position:static;
+		visibility:visible;
+	}
+	.ulLevel1{
+		padding:5px 0 5px 0;
+		border-bottom: thin solid #FBAF3F;
+	}	
+	.ulLevel2{
+		position:static;
+		visibility:visible;
+		border:0;
+		padding:0 0 0 10px;
+		text-align:left;
+	}
+	.mainNav ul li a{
+		text-align:left;
+		border-bottom: thin solid #FBAF3F;
+	}	
+	.myMenu li a:link, .myMenu li a:visited{
+		padding:0.5em 20px;
+	}		
+	.borderNav{
+		border:0;
+	}
+	.logoContainer{
+		width:90%;
+	}
+	
+		
 }

@@ -1,91 +1,39 @@
 
 $(document).ready(function(){
-	var width=960;
-	var animationSpeed=1000;
-	var pause=3000;
-	var currentSlide=1;
-	var transicion=false;
-	//DOM CACHE
-	var $slider=$('#slides');
-	var $slides=$slider.find('.imgSlide');
+	/*$("#splashScreen").css("background-color","#FFF");
+	$("#splashScreen").css("width","100%");
+	$("#splashScreen").css("height","100%");
+	$("#splashScreen").css("position", "absolute");
+	$("#splashScreen").css("z-index","99999");
+	$( "#splashImg" ).css("display", "none");
+	$( "#splashImg" ).delay( 300 ).fadeIn( 500 );
+	$( "#splashScreen" ).delay( 2000 ).fadeOut( 400 );*/
+	(function($){
+			$(window).load(function(){
+				
+				$(".makeScroll").mCustomScrollbar({
+					theme:"rounded-dark",
+				});
+				
+			});
+		})(jQuery);
+		
+		
+		
+	$(".socialHoverImg").css("opacity","0");
 	
-	$(".jumboNextArrow").on("click",nextImage);
-	$(".jumboPrevArrow").on("click",prevImage);
+	$( ".socialImg" ).hover(function() {
+		$( this ).css("opacity", "0");
+		$( this ).parent().children( ".socialHoverImg" ).css("opacity","100");
+	});
+	$( ".socialImg" ).mouseout(function() {
+		$( this ).css("opacity", "100");
+		$( this ).parent().children( ".socialHoverImg" ).css("opacity","0");
+	});
 	
-	function createCarouselInterval(){
-		autoCarInterval=setInterval(activateSlider,pause);
-	}
-	
-	function activateSlider(){
-		transicion=true;
-		$slider.animate({'margin-left':'-='+width}, animationSpeed, slideOrder);
-	}
-	
-	function activateSliderNegative(){
-		transicion=true;
-		$slider.animate({'margin-left':'+='+width}, animationSpeed, slideOrderNegative);
-	}
-	
-	function slideOrderNegative(){
-		currentSlide--;
-		if(currentSlide<=$slides.length){
-			currentSlide=1;
-			$slider.css('margin-left', 0);
-		}
-		transicion=false;
-	}
-	
-	function slideOrder(){
-		currentSlide++;
-		if(currentSlide>=$slides.length){
-			currentSlide=1;
-			$slider.css('margin-left', 0);
-		}
-		transicion=false;
-	}
-	function nextImage(e){
-		clearInterval(autoCarInterval);
-		if(transicion==false){
-			activateSlider();
-			createCarouselInterval();
-		}
-	}
-	function prevImage(e){
-		console.log("SHERRY");
-		clearInterval(autoCarInterval);
-		if(transicion==false){
-			activateSliderNegative();
-			createCarouselInterval();
-		}
-	}
-	createCarouselInterval();
 });
 
 
 
 
-
-
-/*window.onload = function myFunction() {
-	
-	
-}
-
-function carouselAction(){
-	var myVar=setInterval(function(){
-			var posicionCarousel=parseInt(getStyle(slides, "margin-left"));
-			posicionCarousel+=10;
-			console.log(posicionCarousel);
-			document.getElementById("slides").style.marginLeft=posicionCarousel+"px";
-			//console.log(getStyle(slides, "left"));
-		}, 1);
-
-}
-function getStyle(elem, property){
-		if (getComputedStyle !== 'undefined') {
-        	return window.getComputedStyle(elem, null).getPropertyValue(property);
-    	} else {
-        	return elem.currentStyle[property];
-    	}
-}*/
 

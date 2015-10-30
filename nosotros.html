@@ -4,12 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="style/flexslider.css" type="text/css"/>
 <link rel="stylesheet" type="text/css" href="style/styles.css"/>
+<link rel="stylesheet" type="text/css" href="style/lightbox.css"/>
+<link rel="stylesheet" href="style/jquery.mCustomScrollbar.css" />
 <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0"/>
 <script language="javascript" type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
 <script src="scripts/jquery.flexslider.js" type="text/javascript"></script>
 <script language="javascript" type="text/javascript" src="scripts/carousel.js"></script>
 <script language="javascript" type="text/javascript" src="scripts/subMenus.js"></script>
-<title>Home</title>
+<script language="javascript" type="text/javascript" src="scripts/lightbox.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/lightboxcall.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/scripts.js"></script>
+<title>nosotros</title>
 </head>
 
 <body>
@@ -20,28 +26,28 @@
             </div>
             <div class="mainNav cf">
             	<ul class="ulLevel1 myMenu  cf">
-                	<li class="navLevel1"><a href="home.html" class="activeNavBtn">inicio</a></li>
+                	<li class="navLevel1"><a href="home.html" class="inactiveNavBtn">inicio</a></li>
                     <li class="navLevel1 borderNav"><a href="nosotros.html" class="inactiveNavBtn">nosotros</a></li>
-                    <li class="navLevel1 borderNav"><a href="cartelera.html" class="inactiveNavBtn notlinked">cartelera</a>
+                    <li class="navLevel1 borderNav"><a href="cartelera.html" class="inactiveNavBtn">cartelera</a>
                     	<!--<ul class="ulLevel2">
                             <li class="navLevel2"><a href="horarios.html" class="inactiveNavBtn">horarios</a></li>
                         </ul>-->
                     </li>
-                    <li class="navLevel1 borderNav"><a href="talleres.html" class="inactiveNavBtn notlinked">talleres</a>
+                    <li class="navLevel1 borderNav"><a href="talleres.html" class="inactiveNavBtn">talleres</a>
                     	<ul class="ulLevel2">
-                            <li class="navLevel2"><a href="horariosTaller.html" class="inactiveNavBtn">horarios</a></li>
-                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>
+                            <!--<li class="navLevel2"><a href="horariosTaller.html" class="inactiveNavBtn">horarios</a></li>
+                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>-->
                             <li class="navLevel2"><a href="profesores.html" class="inactiveNavBtn">profesores</a></li>
                         </ul>
                     </li>
                     <li class="navLevel1 borderNav"><a href="#" class="inactiveNavBtn notlinked">academia</a>
                     	<ul class="ulLevel2">
-                            <li class="navLevel2"><a href="http://api.jquery.com/event.preventdefault/" class="inactiveNavBtn">horarios</a></li>
-                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>
+                            <!--<li class="navLevel2"><a href="http://api.jquery.com/event.preventdefault/" class="inactiveNavBtn">horarios</a></li>
+                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>-->
                             <li class="navLevel2"><a href="profesores.html" class="inactiveNavBtn">profesores</a></li>
                         </ul>
                     </li>
-                    <li class="navLevel1"><a href="#" class="inactiveNavBtn borderNav">fiestas</a></li>
+                    <li class="navLevel1"><a href="#" class="inactiveNavBtn borderNav">eventos</a></li>
                     <li class="navLevel1"><a href="galeria.html" class="inactiveNavBtn borderNav">galer&iacute;a</a></li>
                     <li class="navLevel1"><a href="contacto.html" class="inactiveNavBtn borderNav">contacto</a></li>
                </ul>
@@ -57,24 +63,69 @@
     Este es un buen espacio para extenderte sobre tu compañía y servicios. Puedes usar este espacio para incorporar más detalles sobre tu empresa. Escribe sobre tu personal y los servicios que ofreces. Cuéntales a los visitantes la historia sobre cómo se te ocurrió la idea de tu negocio y diles qué te diferencia de tus competidores. Haz que tu empresa se destaque y muestra a tus visitantes quién eres. Consejo: Agrega tu propia imagen haciendo clic en la imagen y luego en Cambiar Imagen.</p>-->
                 <div class="nosotrosSectionContainer cf"> 
                     <div class="nosotrosSection">
-                        <div class="nosotrosSectionInner">
+                        <div class="nosotrosSectionInner descripcionPopUp">
                             <img src="images/nosotrosImg1.jpg" alt=""/>
                             <span>randi krarup</span>
-                            <p>Fundadora</p>
+                            <p>fundadora - directora - actriz</p>
+                            <a href="#randiKrarup" class="btnLeerMas" data-effect="mfp-zoom-in">Leer m&aacute;s</a>
+                            <div id="randiKrarup" class="white-popup mfp-with-anim mfp-hide">
+                                <div class="descripcionDetalle">
+                                    <h2 class="tituloNormal">randi krarup</h2>
+                                     <img src="images/nosotrosImg1.jpg" alt=""/>
+                                    <div class="parrafoDescripcionCont makeScroll">
+                                        <p class="parrafoNormal">Danesa, de madre ecuatoriana, residente en el Ecuador la mayor parte de su vida.</p>
+                                        <p class="parrafoNormal"> Master en guión de cine de la ESCAC de Barcelona, y master en Literatura en la Pontífice Universidad Católica de Quito.
+                                        Es fundadora del espacio escénico “El Piccolo Teatro”. </p>
+                                        <p class="parrafoNormal">Fue actriz del reconocido grupo de teatro Malayerba durante 7 años.  En el 2010 escribió, dirigió, produjo y actuó en el monólogo “Aquí es Confortable”. 
+                                        Actuó en los  largometrajes “Cuando Me Toque a Mi” de Víctor Arregui, “Flores Negras” de Gabriela Karolys y “Un Secreto en la Caja” de Javier Izquierdo.</p>
+                                        <p class="parrafoNormal">Fue Productora ejecutiva del Festival de Cine de Quito Creo Latitud en 7 ediciones.  Productora general y ejecutiva del premiado largometraje documental “Con Mí Corazón en Yambo” de María Fernanda Restrepo (<a href="http://www.conmicorazonenyambo.com/" target="_blank">conmicorazonenyambo.com</a>).</p>
+                                        <p class="parrafoNormal">
+                                        Ha sido docente de la Real Academia de Teatro de Madrid, y de la Universidad San Francisco de Quito.
+                                        Dirige, produce, escribe y protagoniza el cortometraje “Esperando La Muerte”.  “Corazón” es su opera prima, proyecto de largometraje de ficción en etapa de desarrollo.   
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="nosotrosSection">
-                        <div class="nosotrosSectionInner">
+                        <div class="nosotrosSectionInner descripcionPopUp">
                             <img src="images/nosotrosImg2.jpg" alt=""/>
                             <span>Ivan Alzate</span>
-                            <p>Productor ejecutivo </p>
+                            <p>co fundador - productor ejecutivo - actor</p>
+                            <a href="#ivanAlzate" class="btnLeerMas" data-effect="mfp-zoom-in">Leer m&aacute;s</a>
+                            <div id="ivanAlzate" class="white-popup mfp-with-anim mfp-hide">
+                                <div class="descripcionDetalle">
+                                    <h2 class="tituloNormal">ivan alzate</h2>
+                                     <img src="images/nosotrosImg2.jpg" alt=""/>
+                                    <div class="parrafoDescripcionCont makeScroll">
+                                        <p class="parrafoNormal">
+                                        Biograf&iacute;a   
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>       
                     <div class="nosotrosSection">
-                        <div class="nosotrosSectionInner">
+                        <div class="nosotrosSectionInner descripcionPopUp">
                             <img src="images/nosotrosImg3.jpg" alt=""/>
                             <span>charlotte haege</span>
-                            <p>Diseñadora esc&eacute;nica </p>
+                            <p>Comunicadora - diseñadora</p>
+                            <a href="#charlotteHage" class="btnLeerMas" data-effect="mfp-zoom-in">Leer m&aacute;s</a>
+                            <div id="charlotteHage" class="white-popup mfp-with-anim mfp-hide">
+                                <div class="descripcionDetalle">
+                                    <h2 class="tituloNormal">charlotte haege</h2>
+                                     <img src="images/nosotrosImg3.jpg" alt=""/>
+                                    <div class="parrafoDescripcionCont makeScroll">
+                                        <p class="parrafoNormal">  
+                                        Charlotte Magdalena Häge nacida en Alemania, hizo su Bachillerato en Alemania y vino después por trabajo voluntario al Ecuador.
+                                        Decidió quedarse en Ecuador y estudió diseño gráfico en el Instituto Metropolitano de Diseño, siendo la ilustración su campo de mayor interés.
+                                        Sus pasiones son el arte y los animales.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>                         
                 </div>
@@ -83,14 +134,17 @@
         <div class="footer">
         	<div class="socialLinkCont cf">
                 <a href="#" class="socialLink socialBtnMargin"> 
-                    <img src="images/facebookIco.png" alt="" width="17" height="17"/>			
+                	<img class="socialHoverImg" src="images/facebookIcoHover.png" alt="" width="17" height="17"/>
+                    <img class="socialImg" src="images/facebookIco.png" alt="" width="17" height="17"/>			
                 </a>
                 <a href="#" class="socialLink socialBtnMargin"> 
-                    <img src="images/tweetIco.png" alt="" width="17" height="17"/>			
+                	<img class="socialHoverImg" src="images/tweetIcoHover.png" alt="" width="17" height="17"/>	
+                    <img class="socialImg" src="images/tweetIco.png" alt="" width="17" height="17"/>			
                 </a> 
                 <a href="#" class="socialLink"> 
-                    <img src="images/googIcon.png" alt="" width="17" height="17"/>			
-                </a>  
+                	<img class="socialHoverImg" src="images/googIconHover.png" alt="" width="17" height="17"/>	
+                    <img class="socialImg" src="images/googIcon.png" alt="" width="17" height="17"/>		
+                </a>   
             </div> 
         </div>
     </div>
