@@ -65,7 +65,7 @@ div{
 	display:block;
 }
 .inactiveNavBtn{
-	color:#FBAF3F;
+	color:#FCB639;
 	-webkit-transition: color 0.3s; /* Safari */
     transition: color 0.3s;
 }
@@ -81,7 +81,7 @@ div{
 }
 .navLevel1{
     float: left;
-	width:12.3%;
+	width:12.2%;
 	position:relative;
 }
 .navLevel2{
@@ -91,9 +91,12 @@ div{
 	border-bottom-width:thick;
 	border-left-width:1px;
 	border-left-style:solid;
-	border-left-color:#FBAF3F;
+	border-left-color:#FCB639;
 	/*padding: 0 5.5%;*/
 }
+#imgSandwichContainer{
+	display:none;
+}	
 /*style the main menu*/
 .myMenu li a:link, .myMenu li a:visited {
 	display:block;
@@ -117,8 +120,8 @@ div{
 	padding:5px 0;
 	z-index:9999;
 	background-color:#000;
-	border-left: thin solid #FBAF3F;
-	border-right: thin solid #FBAF3F;
+	border-left: thin solid #FCB639;
+	border-right: thin solid #FCB639;
 	/*box-shadow: 5px 5px 2px #000;*/
 }
 
@@ -157,7 +160,7 @@ div{
 	font-size:30px;
 	display:block;
 	background-color:#000;
-	color:#FBAF3F;
+	color:#FCB639;
 	line-height:1.4em;
 	text-transform:uppercase;
 	padding:10px;
@@ -169,7 +172,7 @@ div{
 .jumboQuote{
 	display:block;
 	padding:15px;
-	background-color:#FBAF3F;
+	background-color:#FCB639;
 	font-family: Arial, helvetica,sans-serif;
 	position:absolute;
 	text-transform: uppercase;
@@ -252,7 +255,7 @@ div{
 	display:block;
 	text-transform:uppercase;
 	text-align:center;
-	color:#FBAF3F;
+	color:#FCB639;
 	font-size:22px;
 	font-weight:normal;
 	letter-spacing: 7px;
@@ -447,7 +450,7 @@ talleresSectionContainer{
 	color:#000;
 	padding:5px;
 	font-size:13px;
-	background-color:#FBAF3F;
+	background-color:#FCB639;
 	text-transform:uppercase;
 	font-weight:bold;
 	text-align:center;
@@ -560,7 +563,7 @@ talleresSectionContainer{
 	color:#000;
 	padding:5px;
 	font-size:13px;
-	background-color:#FBAF3F;
+	background-color:#FCB639;
 	text-transform:uppercase;
 	font-weight:bold;
 	text-align:center;
@@ -741,7 +744,8 @@ talleresSectionContainer{
 	}
 	.ulLevel1{
 		padding:5px 0 5px 0;
-		border-bottom: thin solid #FBAF3F;
+		overflow:hidden;
+		height:auto;
 	}	
 	.ulLevel2{
 		position:static;
@@ -752,7 +756,7 @@ talleresSectionContainer{
 	}
 	.mainNav ul li a{
 		text-align:left;
-		border-bottom: thin solid #FBAF3F;
+		border-bottom: thin solid #FCB639;
 	}	
 	.myMenu li a:link, .myMenu li a:visited{
 		padding:0.5em 20px;
@@ -763,6 +767,11 @@ talleresSectionContainer{
 	.logoContainer{
 		width:90%;
 	}
-	
+	#imgSandwichContainer{
+		display:block;
+		float:right;
+		padding:0 20px 10px 0;
+		cursor:pointer;
+	}	
 		
 }
