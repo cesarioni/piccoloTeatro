@@ -64,6 +64,9 @@ div{
 	text-align:center;
 	display:block;
 }
+.spacingExtra{
+	letter-spacing:2px;
+}	
 .inactiveNavBtn{
 	color:#FCB639;
 	-webkit-transition: color 0.3s; /* Safari */
@@ -413,7 +416,7 @@ talleresSectionContainer{
 .obraDescripContainer{
 	padding: 0 0 0 0;
 }
-.carteleraContainer h2, .tituloNormal{
+.tituloNormal{
 	font-size:15px;
 	padding:10px 0;
 	text-align:left;
@@ -421,8 +424,23 @@ talleresSectionContainer{
 	font-weight:normal;
 	color:#000;
 }	
+.carteleraContainer h2{
+	font-size:15px;
+	padding:10px 0 0 0;
+	text-align:left;
+	text-transform:uppercase;
+	font-weight:bolder;
+	color:#000;
+}
+.carteleraContainer h3{
+	font-size:14px;
+	padding: 0 0 12.5px 0;
+	text-align:left;
+	font-weight:normal;
+	color:#000;
+}	
 .carteleraContainer p, .parrafoNormal{
-	padding:0 0 10px 0;
+	padding:0 0 7px 0;
 	font-size:13px;
 	font-family: "Open Sans",sans-serif;
 	color:#333;

@@ -35,12 +35,12 @@ $(document).ready(function(){
 	$(".ulLevel1").css("height", "0");
 	RespMenuOpen=false;
 	$("#imgSandwichContainer").click(function(){
-		RespMenuOpen= !RespMenuOpen;
 		if(RespMenuOpen==false){
 			$(".ulLevel1").css("height", "auto");
 		}else{
 			$(".ulLevel1").css("height", "0");
 		}
+		RespMenuOpen= !RespMenuOpen;
 		})
 	
 });
