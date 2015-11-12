@@ -4,14 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="style/flexslider.css" type="text/css"/>
 <link rel="stylesheet" type="text/css" href="style/styles.css"/>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="style/lightbox.css"/>
+<link rel="stylesheet" href="style/jquery.mCustomScrollbar.css" />
+<link rel="icon" type="image/png" href="images/faviCon.jpg" />
+
 <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0"/>
 <script language="javascript" type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
 <script src="scripts/jquery.flexslider.js" type="text/javascript"></script>
 <script language="javascript" type="text/javascript" src="scripts/carousel.js"></script>
 <script language="javascript" type="text/javascript" src="scripts/subMenus.js"></script>
-<script language="javascript" type="text/javascript" src="scripts/readmore.min.js"></script>
-<script language="javascript" type="text/javascript" src="scripts/masInfo.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/lightbox.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/lightboxcall.js"></script>
 <script language="javascript" type="text/javascript" src="scripts/jquery.mCustomScrollbar.concat.min.js"></script>
 <script language="javascript" type="text/javascript" src="scripts/scripts.js"></script>
 <title>talleres</title>
@@ -42,186 +45,107 @@
                            <!-- <li class="navLevel2"><a href="profesores.html" class="inactiveNavBtn">profesores</a></li>-->
                         <!--</ul>-->
                     </li>
-                    <li class="navLevel1 borderNav"><a href="#" class="inactiveNavBtn notlinked">academia</a>
-                    	<!--<ul class="ulLevel2">-->
-                            <!--<li class="navLevel2"><a href="http://api.jquery.com/event.preventdefault/" class="inactiveNavBtn">horarios</a></li>
-                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>-->
-                            <!--<li class="navLevel2"><a href="profesores.html" class="inactiveNavBtn">profesores</a></li>-->
-                        <!--</ul>-->
-                    </li>
+                    <!--<li class="navLevel1 borderNav"><a href="#" class="inactiveNavBtn notlinked">academia</a>
+                    	<ul class="ulLevel2">
+                            <li class="navLevel2"><a href="http://api.jquery.com/event.preventdefault/" class="inactiveNavBtn">horarios</a></li>
+                            <li class="navLevel2"><a href="#" class="inactiveNavBtn">precios</a></li>
+                            <li class="navLevel2"><a href="profesores.html" class="inactiveNavBtn">profesores</a></li>
+                        </ul>
+                    </li>-->
                     <li class="navLevel1"><a href="#" class="inactiveNavBtn borderNav">eventos</a></li>
                     <li class="navLevel1"><a href="galeria.html" class="inactiveNavBtn borderNav">galer&iacute;a</a></li>
                     <li class="navLevel1"><a href="contacto.html" class="inactiveNavBtn borderNav">contacto</a></li>
                </ul>
             </div>
         </div>
-        <div class="mainContent innerPageContent">
-        	<div class="pageTitleContainer">
+        <div class="mainContent innerPageContent specialInnerPageContent">
+        	<div class="pageTitleContainer horarioEspecial">
         	<h1 class="pageTitle">talleres</h1>
             </div>
             <div class="talleresContainer">
-                <!--<p class="parrafoInnerPage justificar">Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Haz clic en Editar Texto o doble clic aquí para agregar tu contenido y cambiar la fuente. Puedes arrastrar y soltar este texto donde sea que quieras en tu página. Aquí puedes contar tu historia y permitir a tus usuarios saber más sobre ti.
-     
-    Este es un buen espacio para extenderte sobre tu compañía y servicios. Puedes usar este espacio para incorporar más detalles sobre tu empresa. Escribe sobre tu personal y los servicios que ofreces. Cuéntales a los visitantes la historia sobre cómo se te ocurrió la idea de tu negocio y diles qué te diferencia de tus competidores. Haz que tu empresa se destaque y muestra a tus visitantes quién eres. Consejo: Agrega tu propia imagen haciendo clic en la imagen y luego en Cambiar Imagen.</p>-->
                 <div class="talleresSectionContainer cf"> 
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner">
-                            <span>rel&aacute;jate en movimiento</span>
-                            <p>Lunes 19h15-20h15 </p>
-                            <p>Jueves 7h00-8h00</p>
-                            <div class="moreLess">
-                            <p>Taller dirigido a los pequeñitos deseen explorar el uso de su voz y desarrollar sus habilidades desde su temprana edad.  Los talleristas podrán aprender técnicas para desarrollar su voz y respiración y mejorar su presencia 									escénica y física. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner ">
-                            <span>pies para bailar </span>
-                            <p>Martes 11h45-12h45</p>
-                            <div class="moreLess">
-                            <p>Taller dirigido a los pequeñitos deseen explorar el uso de su voz y desarrollar sus habilidades desde su temprana edad.  Los talleristas podrán aprender técnicas para desarrollar su voz y respiración y mejorar su presencia 									escénica y física. </p>
-                            </div>
-                        </div>
-                    </div>       
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner">
-                            <span>moviento creativo</span>
-                            <p>Martes 7h00-8h00 </p>
-                            <p>Martes 8h15-9h15 </p>
-                            <div class="moreLess">
-                            <p>Taller dirigido a los pequeñitos deseen explorar el uso de su voz y desarrollar sus habilidades desde su temprana edad.  Los talleristas podrán aprender técnicas para desarrollar su voz y respiración y mejorar su presencia 									escénica y física. </p>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner">
-                            <span>beb&eacute; baila con mam&aacute; </span>
-                            <p>Jueves 10h30-11h30 </p>
-                            <div class="moreLess">
-                            <p>Taller dirigido a los pequeñitos deseen explorar el uso de su voz y desarrollar sus habilidades desde su temprana edad.  Los talleristas podrán aprender técnicas para desarrollar su voz y respiración y mejorar su presencia 									escénica y física. </p>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner">
-                            <span>teatro niños (4 a 8)</span>
-                            <p>Lunes 15h30-16h30</p>
-                            <p>Mi&eacute;rcoles 15h30-16h30</p>
-                            <div class="moreLess">
-                            <p>Taller dirigido a los pequeñitos deseen explorar el uso de su voz y desarrollar sus habilidades desde su temprana edad.  Los talleristas podrán aprender técnicas para desarrollar su voz y respiración y mejorar su presencia 									escénica y física. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner">
-                            <span>teatro niños (9 a 14)</span>
-                            <p>Lunes 16h45-17h45</p>
-                            <p>Mi&eacute;rcoles 16h45-17h45</p>
-                            <div class="moreLess">
-                            <p>Taller dirigido a los pequeñitos deseen explorar el uso de su voz y desarrollar sus habilidades desde su temprana edad.  Los talleristas podrán aprender técnicas para desarrollar su voz y respiración y mejorar su presencia 									escénica y física. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner">
-                            <span>taller de la voz niños</span>
-                            <p>Martes 16h45-17h45</p>
-                            <div class="moreLess">
-                            <p>Taller dirigido a los pequeñitos deseen explorar el uso de su voz y desarrollar sus habilidades desde su temprana edad.  Los talleristas podrán aprender técnicas para desarrollar su voz y respiración y mejorar su presencia 									escénica y física. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner">
-                            <span>Taller de la voz adultos</span>
-                            <p>Martes 16h45-17h45</p>
-                            <div class="moreLess">
-                            	<p>Taller dirigido a cantantes, profesores, actores, o cualquier persona que desea investigar el uso de su voz.  Los talleristas podrán aprender técnicas para desarrollar su voz y respiración y mejorar su presencia escénica y física.  </p>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner">
-                            <span>mam&aacute;, yo y la m&uacute;sica</span>
-                            <p>Martes 10h30-11h30</p>
-                            <div class="moreLess">
-                            	<p>Divertidas clases de música y movimiento en español y en ingles, en la que tú y tu bebé podrán explorar cultura, música y lenguaje en un entorno creativo y lleno de amor.  Para bebés de 0 a 30 meses y sus mamás (y/o papás).</p>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner">
-                            <span>flamenco</span>
-                            <p>Martes 15h30-16h30</p>
-                            <p>Jueves 15h30-16h30</p>
-                            <div class="moreLess">
-                            	<p>Taller dirigido a cantantes, profesores, actores, o cualquier persona que desea investigar el uso de su voz.  Los talleristas podrán aprender técnicas para desarrollar su voz y respiración y mejorar su presencia escénica y física.  </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner">
-                            <span>danza arabe</span>
-                            <p>Lunes 8h15-9h15</p>
-                            <div class="moreLess">
-                            	<p>Taller dirigido a cantantes, profesores, actores, o cualquier persona que desea investigar el uso de su voz.  Los talleristas podrán aprender técnicas para desarrollar su voz y respiración y mejorar su presencia escénica y física.  </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner">
-                            <span>danza arabe niños</span>
-                            <p>Por confirmar</p>
-                            <div class="moreLess">
-                            	<p>Taller dirigido a cantantes, profesores, actores, o cualquier persona que desea investigar el uso de su voz.  Los talleristas podrán aprender técnicas para desarrollar su voz y respiración y mejorar su presencia escénica y física.  </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner">
-                            <span>contact</span>
-                            <p>Martes 19h15-20h15</p>
-                            <div class="moreLess">
-                            	<p>Taller dirigido a cantantes, profesores, actores, o cualquier persona que desea investigar el uso de su voz.  Los talleristas podrán aprender técnicas para desarrollar su voz y respiración y mejorar su presencia escénica y física.  </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner">
-                            <span>din&aacute;mica corporal</span>
-                            <p>Jueves 8h15-9h15</p>
-                            <div class="moreLess">
-                            	<p>Taller dirigido a cantantes, profesores, actores, o cualquier persona que desea investigar el uso de su voz.  Los talleristas podrán aprender técnicas para desarrollar su voz y respiración y mejorar su presencia escénica y física.  </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner">
-                            <span>danza niños</span>
-                            <p>Viernes 15h30-16h30</p>
-                            <div class="moreLess">
-                            	<p>Taller dirigido a cantantes, profesores, actores, o cualquier persona que desea investigar el uso de su voz.  Los talleristas podrán aprender técnicas para desarrollar su voz y respiración y mejorar su presencia escénica y física.  </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner">
-                            <span>expresi&oacute;n corporal niños</span>
-                            <p>Viernes 16h45-17h45</p>
-                            <div class="moreLess">
-                            	<p>Taller dirigido a cantantes, profesores, actores, o cualquier persona que desea investigar el uso de su voz.  Los talleristas podrán aprender técnicas para desarrollar su voz y respiración y mejorar su presencia escénica y física.  </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="talleresSection">
-                        <div class="talleresSectionInner">
-                            <span>magia</span>
-                            <p>Mi&eacute;rcoles 19h15-20h15</p>
-                            <div class="moreLess">
-                            	<p>Taller dirigido a cantantes, profesores, actores, o cualquier persona que desea investigar el uso de su voz.  Los talleristas podrán aprender técnicas para desarrollar su voz y respiración y mejorar su presencia escénica y física.  </p>
-                            </div>
-                        </div>
-                    </div>                            
+                	<table id="horarioTable">
+                    <tr id="tableHeader">
+                    	<td>Lunes</td>
+                        <td>Martes</td>
+                        <td>Mi&eacute;rcoles</td>
+                        <td>Jueves</td>
+                        <td>Viernes</td>
+                        <td>S&aacute;bado</td>
+                    </tr>
+                    <tr>
+                    	<td></td>
+                        <td class="popupHorario colorCeldaA"><a href="#movimientocreativo"  data-effect="mfp-zoom-in"><h2>movimiento creativo</h2><p class="horarioHora">07h00-08h00</p><p class="horarioProfe">Magally</p></a></td>
+                        <td></td>
+                        <td class="popupHorario colorCeldaA"><a href="#relajateenmovimiento"  data-effect="mfp-zoom-in"><h2>rel&aacute;jate en movimiento</h2><p class="horarioHora">07h00-08h00</p><p class="horarioProfe">Magally</p></a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                    	<td></td>
+                        <td class="popupHorario colorCeldaA"><a href="#movimientocreativo"  data-effect="mfp-zoom-in"><h2>movimiento creativo</h2><p class="horarioHora">08h15-09h15</p><p class="horarioProfe">Magally</p></a></td>
+                        <td></td>
+                        <td class="popupHorario colorCeldaA"><a href="#dinamicacorporal"  data-effect="mfp-zoom-in"><h2>din&aacute;mica corporal</h2><p class="horarioHora">08h15-09h15</p><p class="horarioProfe">Camila</p></a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                    	<td></td>
+                        <td class="popupHorario colorCeldaB"><a href="#mamayoylamusica"  data-effect="mfp-zoom-in"><h2>pies para bailar <span>(3ra edad)</span></h2><p class="horarioHora">10h30-11h30</p><p class="horarioProfe">Magally</p></a></td>
+                        <td></td>
+                        <td class="popupHorario colorCeldaC"><a href="#bebebalaconmama"  data-effect="mfp-zoom-in"><h2>beb&Eacute; baila con mam&aacute;</h2><p class="horarioHora">10h30-11h30</p><p class="horarioProfe">Magally</p></a></td>
+                        <td></td>
+                        <td class="popupHorario colorCeldaA"><a href="#tallerdemaquillaje"  data-effect="mfp-zoom-in"><h2>taller de maquillaje</h2><p class="horarioHora">10h30-11h30</p><p class="horarioProfe">Ingrid</p></a></td>
+                    </tr>
+                    <tr>
+                    	<td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="popupHorario colorCeldaA"><a href="#tallerdemaquillaje"  data-effect="mfp-zoom-in"><h2>taller de maquillaje</h2><p class="horarioHora">11h45-12h45</p><p class="horarioProfe">Ingrid</p></a></td>
+                    </tr>
+                    <tr>
+                    	<td class="celdaVacia"></td>
+                        <td class="celdaVacia"></td>
+                        <td class="celdaVacia"></td>
+                        <td class="celdaVacia"></td>
+                        <td class="celdaVacia"></td>
+                        <td class="celdaVacia"></td>
+                    </tr>
+                    <tr>
+                    	<td class="popupHorario colorCeldaC"><a href="#teatroninios4a7"  data-effect="mfp-zoom-in"><h2>teatro niños <span>(4-7 años)</span></h2><p class="horarioHora">15h30-16h30</p><p class="horarioProfe">Toño</p></a></td>
+                        <td class="popupHorario colorCeldaC"><a href="#mamayoylamusica"  data-effect="mfp-zoom-in"><h2>mam&aacute;, yo y la m&uacute;sica</h2><p class="horarioHora">15h30-16h30</p><p class="horarioProfe">Anabel</p></a></td>
+                        <td class="popupHorario colorCeldaC"><a href="#teatroninios4a7"  data-effect="mfp-zoom-in"><h2>teatro niños <span>(4-7 años)</span></h2><p class="horarioHora">15h30-16h30</p><p class="horarioProfe">Toño</p></a></td>
+                        <td></td>
+                        <td class="popupHorario colorCeldaC"><a href="#danzaninios4a7"  data-effect="mfp-zoom-in"><h2>danza niños <span>(4-7 años)</span></h2><p class="horarioHora">15h30-16h30</p><p class="horarioProfe">Camila</p></a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                    	<td class="popupHorario colorCeldaC"><a href="#teatroninios8a13"  data-effect="mfp-zoom-in"><h2>teatro niños <span>(8-13 años)</span></h2><p class="horarioHora">16h45-17h45</p><p class="horarioProfe">Frank</p></a></td>
+                        <td class="popupHorario colorCeldaC"><a href="#tallerdelavozninios"  data-effect="mfp-zoom-in"><h2>taller de la voz niños</span></h2><p class="horarioHora">16h45-17h45</p><p class="horarioProfe">Anabel</p></a></td>
+                        <td class="popupHorario colorCeldaC"><a href="#teatroninios8a13"  data-effect="mfp-zoom-in"><h2>teatro niños <span>(8-13 años)</span></h2><p class="horarioHora">16h45-17h45</p><p class="horarioProfe">Frank</p></a></td>
+                        <td></td>
+                        <td class="popupHorario colorCeldaC"><a href="#danzaninios8a13"  data-effect="mfp-zoom-in"><h2>danza niños <span>(8-13 años)</span></h2><p class="horarioHora">16h45-17h45</p><p class="horarioProfe">Camila</p></a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                    	<td class="popupHorario colorCeldaA"><a href="#actuacionadultos"  data-effect="mfp-zoom-in"><h2>actuaci&oacute;n adultos</h2><p class="horarioHora">18h00-19h00</p><p class="horarioProfe">Randi</p></a></td>
+                        <td class="popupHorario colorCeldaA"><a href="#tallerdelavozadultos"  data-effect="mfp-zoom-in"><h2>taller de la voz adultos</h2><p class="horarioHora">18h00-19h00</p><p class="horarioProfe">Anabel</p></a></td>
+                        <td></td>
+                        <td></td>
+                        <td class="popupHorario colorCeldaA"><a href="#contact"  data-effect="mfp-zoom-in"><h2>contact</h2><p class="horarioHora">18h00-19h00</p><p class="horarioProfe">Camila</p></a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                    	<td class="popupHorario colorCeldaA"><a href="#movimientocreativo"  data-effect="mfp-zoom-in"><h2>rel&aacute;jate en movimiento</h2><p class="horarioHora">19h15-20h15</p><p class="horarioProfe">Magally</p></a></td>
+                        <td class="popupHorario colorCeldaA"><a href="#magiaadultos"  data-effect="mfp-zoom-in"><h2>magia adultos</h2><p class="horarioHora">19h15-20h15</p><p class="horarioProfe">Gizzu</p></a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </table>            
                 </div>
             </div>
         </div>
@@ -241,6 +165,7 @@
                 </a>   
             </div> 
         </div>
+        <div id="movimientocreativo" class="white-popup mfp-with-anim mfp-hide"><h2>movimiento creativo</h2><p class="horarioHora">07h00-08h00</p><p class="horarioProfe">Magaly</p></div>
     </div>
 </body>
 </html>

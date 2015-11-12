@@ -32,6 +32,20 @@ $(document).ready(function(){
 	});
 	
 	
+	/*
+	
+	$( ".colorCeldaA" ).hover(function() {
+		$( this ).css("background-color", "#FFF");
+		console.log("in");
+	});
+	$( ".colorCeldaA" ).mouseout(function() {
+		console.log("out");
+		$( this ).css("background-color", "#dededf");
+	});
+	
+	*/
+	
+	
 	$(".ulLevel1").css("height", "0");
 	RespMenuOpen=false;
 	$("#imgSandwichContainer").click(function(){

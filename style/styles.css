@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic,700,700italic,800,800italic,300,300italic);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100);
 .cf {
     zoom: 1;
@@ -84,7 +84,7 @@ div{
 }
 .navLevel1{
     float: left;
-	width:12.2%;
+	width:14.2%;
 	position:relative;
 }
 .navLevel2{
@@ -357,7 +357,7 @@ profesoresSectionContainer{
 }
 /*TALLERES*/
 .talleresContainer{
-	padding:50px;
+	padding:0 10px 10px 10px;
 }	
 
 .talleresSectionInner{
@@ -396,6 +396,120 @@ talleresSectionContainer{
 	font-family: "Open Sans",sans-serif;
 	font-size: 13px;	
 	color:#333;
+}
+.horaTallerContainer{
+	padding:50px;
+}	
+.horaTallerContainer table{
+	width:100%;
+	border-spacing:0px;
+}
+.horaTallerContainer table tr td{
+	text-align:left;
+	font-family: "Open Sans",sans-serif;
+	font-size: 12px;
+	padding:5px 5px;
+}
+.encabezados {
+	background-color:#000;
+	color:#FFF;
+	text-transform:uppercase;
+	font-family: "Open Sans",sans-serif;
+	font-size: 13px;
+}
+.lightBackground{
+	background-color:#E9E9E9;
+}
+.darkBackground{
+	background-color:#CCC;
+}
+
+#horarioTable{
+	width:100%;
+	border-spacing:0px;
+	border: 1px solid #CCC;
+}
+#horarioTable tr td{
+	text-align:center;
+	border-bottom: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+}
+#horarioTable tr td a,#horarioTable tr td a:visited {
+	display:block;
+	color:#000;
+	padding:10px 0 5px 0;
+	font-family: "Open Sans",sans-serif;
+}
+#horarioTable tr td h2{
+	font-size:11px;
+	letter-spacing:0;
+	font-family: "Open Sans",sans-serif;
+	font-weight:normal;
+}
+.horarioHora{
+	font-weight:bold;
+	letter-spacing:1px;
+	font-family: "Open Sans",sans-serif;
+}	
+.horarioProfe{
+	padding:5px 0 0 0;
+	font-size:12px;
+	font-weight:lighter;
+}	
+#tableHeader{
+	font-size:17px;
+	text-transform:capitalize;
+	font-weight:600;
+	letter-spacing:1px;
+}
+#tableHeader td{
+	background-color:#FCB639;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+	padding:11px 0;
+	font-weight:bold;
+	font-family:Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size:21px;
+}
+.celdaVacia{
+	height:30px
+}		
+.colorCeldaA{
+	background-color:#dededf;
+	-webkit-transition: background-color 0.3s; /* Safari */
+    transition: background-color 0.3s;
+}	
+.colorCeldaB{
+	background-color:#aed8ab;
+	-webkit-transition: background-color 0.3s; /* Safari */
+    transition: background-color 0.3s;
+}	
+.colorCeldaC{
+	background-color:#b0e0ea;
+	-webkit-transition: background-color 0.3s; /* Safari */
+    transition: background-color 0.3s;
+}	
+.colorCeldaA:hover, .colorCeldaB:hover, .colorCeldaC:hover{
+	background-color:#FFF;
+}	
+.horarioEspecial{
+	width:auto;
+	padding: 0 10px;
+	background-color:#FFF;
+	height:auto;
+}
+.horarioEspecial .pageTitle{
+	background-color:#000;
+	height:100%;
+	color:#FFF;
+	text-transform:capitalize;
+	font-size:41px;
+	font-weight:400;
+	letter-spacing:3px;
+	padding:20px 0;
+}
+.specialInnerPageContent{
+	padding:10px 0 0 0;
 }
 /*CARTELERA*/
 .carteleraContainer{
@@ -632,33 +746,7 @@ talleresSectionContainer{
 	border-bottom: medium solid #000;
 	padding:0 0 20px 0;
 }
-/*HORARIO TALLER*/
-.horaTallerContainer{
-	padding:50px;
-}	
-.horaTallerContainer table{
-	width:100%;
-	border-spacing:0px;
-}
-.horaTallerContainer table tr td{
-	text-align:left;
-	font-family: "Open Sans",sans-serif;
-	font-size: 12px;
-	padding:5px 5px;
-}
-.encabezados {
-	background-color:#000;
-	color:#FFF;
-	text-transform:uppercase;
-	font-family: "Open Sans",sans-serif;
-	font-size: 13px;
-	}
-.lightBackground{
-	background-color:#E9E9E9;
-}
-.darkBackground{
-	background-color:#CCC;
-}
+
 /*CONTACTO*/
 .contactoContainer{
 	padding:50px 40px;
