@@ -39,7 +39,7 @@ div{
 	padding:0 0 0px 0;
 }	
 .logoContainer{
-	width:447px;
+	width:402px;
 	height:50px;
 	margin:0px auto 0 auto;
 	padding:69px 0 0 0;
@@ -159,14 +159,16 @@ div{
 }	
 .quote{
 	position:absolute;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:"Open Sans",sans-serif;
+	font-weight:600;
 	font-size:30px;
 	display:block;
 	background-color:#000;
 	color:#FCB639;
 	line-height:1.4em;
 	text-transform:uppercase;
-	padding:10px;
+	padding:5px 35px 5px 35px;
+	letter-spacing:2px;
 	top:8%;
 	/*
 	left:60px;
@@ -176,7 +178,7 @@ div{
 	display:block;
 	padding:15px;
 	background-color:#FCB639;
-	font-family: Arial, helvetica,sans-serif;
+	font-family:"Open Sans",sans-serif;
 	position:absolute;
 	text-transform: uppercase;
 	font-weight:bold;
@@ -217,7 +219,7 @@ div{
 .socialLinkCont{
 	float:right;
 	margin:10px 0 0 0;
-	width:69px;
+	/*width:69px;*/
 	display:block;
 }
 .socialLink{
@@ -316,6 +318,9 @@ div{
 	line-height:170%;
 	letter-spacing:0.5px;
 }
+.anchoNosotros{
+	width:250px;
+}	
 /*PROFESORES*/
 .profesoresContainer{
 	padding:50px;
@@ -431,8 +436,8 @@ talleresSectionContainer{
 }
 #horarioTable tr td{
 	text-align:center;
-	border-bottom: 1px solid #CCC;
-	border-left: 1px solid #CCC;
+	border-bottom: 1px solid #8A8A8A;
+	border-left: 1px solid #8C8C8C;
 }
 #horarioTable tr td a,#horarioTable tr td a:visited {
 	display:block;
@@ -502,15 +507,95 @@ talleresSectionContainer{
 	background-color:#000;
 	height:100%;
 	color:#FFF;
-	text-transform:capitalize;
+	text-transform:uppercase;
 	font-size:41px;
 	font-weight:400;
-	letter-spacing:3px;
+	letter-spacing:16px;
 	padding:20px 0;
 }
 .specialInnerPageContent{
 	padding:10px 0 0 0;
 }
+/*TALLERES POP UP*/
+.mfp-close{
+	visibility:hidden;
+}	
+#mamayoylamusica{
+	width:707px;
+}	
+#contact{
+	width:695px;
+}	
+#teatroninios8a13{
+	width:768px;
+}	
+#tallerdelavozninios{
+	width:707px;
+}		
+#tallerdelavozadultos{
+	width:707px;
+}	
+#dinamicacorporal{
+	width:677px;
+}
+#danzaninios8a13{
+	width:695px;
+}		
+#danzaninios4a7{
+	width:695px;
+}	
+#movimientocreativo{
+	width:653px;
+}
+#piesbailar{
+	width:682px;
+}
+#bebebalaconmama{
+	width:647px;
+}	
+#teatroninios4a7{
+	width:701px;
+}	
+#relajateenmovimiento{
+	width:691px;
+}	
+#magiaadultos{
+	width:677px;
+}	
+#actuacionadultos{
+	width:702px;
+}		
+.titCurso{
+	color:#686868;
+	font-family: "Open Sans",sans-serif;
+	font-weight:normal;
+	font-size:32px;
+}
+.descripcionCurso{
+	color:#494949;
+	font-family: "Open Sans",sans-serif;
+	font-weight:300;
+	font-size:13px;
+}	
+.titCurso{
+	text-transform:uppercase;
+	font-size:32px;
+	font-weight:normal;
+	color:#686868;
+}		
+.titHorario{
+	text-transform:uppercase;
+	font-size:17px;
+	font-weight:bold;
+	color:#494949;
+}
+.textoHorario{
+	font-family: "Open Sans",sans-serif;
+	font-weight:300;
+	color:#494949;
+	font-size:18px;
+}
+
 /*CARTELERA*/
 .carteleraContainer{
 	padding:80px 50px 50px 50px;
@@ -748,6 +833,32 @@ talleresSectionContainer{
 }
 
 /*CONTACTO*/
+.logoContactoContainer{
+	width:250px;
+	position:absolute;
+	right:0;
+	bottom:20;
+}
+.logoContactoContainer img{
+	width:100%;
+	height:auto;
+}	
+.facebookContact{
+	padding:5px 0 0 0;
+	display:block;
+}
+.telfPiccolo{
+	font-family: "Open Sans",sans-serif;
+	font-size:13px;
+	letter-spacing:1px;
+	font-weight:normal;
+}
+.direccionPiccolo{
+	font-family: "Open Sans",sans-serif;
+	font-size:13px;
+	letter-spacing:1px;
+	font-weight:normal;
+}
 .contactoContainer{
 	padding:50px 40px;
 }
@@ -759,14 +870,19 @@ talleresSectionContainer{
 	width:290px;
 	border-top: medium solid #000;
 }
-.contactdata p{
-	padding:10px 0 10px 0;
+.emailPiccolo{
 	font-size:16px;
+	font-weight:bold;
+	font-size:13px;
+	letter-spacing:1px;
+}
+.contactdata p{
+	padding:5px 0 5px 0;
 }
 .googleMapContainer{
 	width:283px;
 	height:280px;
-	padding:0 0 0 22px;
+	padding:0 0 0 50px;
 }	
 .contactFormContainer{
 	width:283px;

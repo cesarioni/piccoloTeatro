@@ -3,12 +3,19 @@
 .white-popup {
   position: relative;
   background: #FFF;
-  padding: 25px;
-  width:auto;
-  max-width: 250px;
+  padding: 0px;
+  /*width:auto;*/
+  max-width: auto;
   margin: 0 auto; 
 }
-
+.white-popupB {
+  position: relative;
+  background: #FFF;
+  padding: 15px;
+  /*width:auto;*/
+  max-width: auto;
+  margin: 0 auto; 
+}
 .mfp-zoom-in {
   /* start state */
   /* animate in */
